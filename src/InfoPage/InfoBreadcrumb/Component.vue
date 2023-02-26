@@ -1,0 +1,14 @@
+<template lang="pug">
+  include Template.pug
+</template>
+
+<script>
+export default {
+	props: ['information'],
+	name: 'InfoBreadcrumb'
+}
+</script>
+
+<style lang="scss" scoped>
+  @import "Style.scss";
+</style>
