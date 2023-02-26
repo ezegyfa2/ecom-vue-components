@@ -1,0 +1,14 @@
+section.newsletter-area
+    .container
+        .row.justify-content-between
+            // Newsletter Text
+            .col-12.col-lg-6
+                .newsletter-text
+                    h2 Join our Newsletter
+                    p Nulla ac convallis lorem, eget euismod nisl. bibendum nec.
+            // Newsletter Form
+            .col-12.col-lg-4
+                .newsletter-form
+                    form
+                        input.nl-email(placeholder='Your E-mail')
+                        button.input-button(@click.prevent='haSubmit') Submit

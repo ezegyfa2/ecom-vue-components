@@ -1,5 +1,5 @@
-<template>
-    <ContactForm />
+<template lang="pug">
+  include Template.pug
 </template>
 
 <script>

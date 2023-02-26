@@ -1,0 +1,8 @@
+.container.py-5(style='padding-top:70px;')
+    infobreadcrumb(:information='information')
+        infobox(:information='information')
+            infotext
+                .related-item
+                    hr
+                    h6.pb-4 RELATED PRODUCTS
+                    card(:cardarray='sliceRelatedItems')

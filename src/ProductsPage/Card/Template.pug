@@ -1,0 +1,12 @@
+div
+    transition-group.row(name='fade' tag='div')
+        .col-6.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-xs-4.pb-3(v-for='item in CardArray' :key='item.id')
+            .card
+                img.card-img-top(:src='item.img' alt='Card image cap')
+                .overlay
+                    button.btn.btn-outline-secondary.btn-lg(type='button' @click='addtoCart(item)') Add +
+                    router-link(to='/Info')
+                        button.btn.btn-outline-secondary.btn-lg(type='button' @click='sendInfo(item)') Info
+                .card-body
+                    h5.card-title {{ item.title }}
+                    p.card-text ${{ item.price }}

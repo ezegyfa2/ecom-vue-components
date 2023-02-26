@@ -1,0 +1,32 @@
+.footer_area {
+    position: relative;
+    z-index: 1;
+    color: #2c3539;
+    background-color: #fefefe;
+}
+
+.footer-widget {
+    padding-top: 60px;
+}
+
+.footer-title {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.list-unstyled a {
+    text-decoration: none;
+}
+
+.list-unstyled a li {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.social-info > img {
+    padding-left: 10px;
+}
+
+.social-info > img:hover {
+    opacity: 0.7;
+}

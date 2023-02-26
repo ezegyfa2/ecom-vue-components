@@ -1,0 +1,3 @@
+div(@click="getValue('sli')")
+    vue-slider(ref='sli' v-model='value' v-bind='options')
+    span ${{ value.join(&apos; ~ $&apos;) }}
