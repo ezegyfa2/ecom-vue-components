@@ -1,13 +1,13 @@
 <template lang="pug">
-  include Template.pug
+    include Template.pug
 </template>
 
 <script>
-export default {
-	name: 'Carousel'
-}
+    export default {
+        name: 'Carousel'
+    }
 </script>
 
-<style lang="scss"  scoped>
-  @import "Style.scss";
+<style lang="scss" scoped>
+    @import "Style.scss";
 </style>

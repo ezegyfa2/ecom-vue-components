@@ -1,16 +1,15 @@
 <template lang="pug">
-  include Template.pug
+    include Template.pug
 </template>
 
 <script>
-import Carousel from '@/Components/HomePage/Carousel.vue'
-import AboutUs from '@/Components/HomePage/AboutUs.vue'
+	import Carousel from '@/Components/HomePage/Carousel.vue'
+	import AboutUs from '@/Components/HomePage/AboutUs.vue'
 
-export default {
-	components: {
-		Carousel,
-		AboutUs
+	export default {
+		components: {
+			Carousel,
+			AboutUs
+		}
 	}
-}
-
 </script>
