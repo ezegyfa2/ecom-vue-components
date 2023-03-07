@@ -2,7 +2,8 @@
 	include Template.pug
 </template>
 
-<script>export default {
+<script>
+export default {
 	name: 'Cart',
 	data() {
 		return {
