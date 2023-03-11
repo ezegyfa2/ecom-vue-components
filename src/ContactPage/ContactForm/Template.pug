@@ -4,16 +4,16 @@ section
             .col-12.col-xl-6.col-lg-6.col-md-6.col-sm-12.order-sm-0.order-12(style='margin-right:-120px;')
                 img.img-fluid(src='@/assets/_con.jpg')
             .col-12.col-xl-6.col-lg-5.col-md-6.col-sm-12.order-first.order-xl-0
-                h1 Hello there
-                h2(style='color:grey') got a thought to discuss?
+                h1 {{ hello_there }}
+                h2(style='color:grey') {{ sub_title }}
                 form
                     .form-group
                         input.form-control(type='text' required='')
-                        label.label(for='name') Name
+                        label.label(for='name') {{ name }}
                     .form-group
                         input.form-control(type='email' required='')
-                        label.label(for='E-mail') E-mail
+                        label.label(for='E-mail') {{ email }}
                     .form-group
                         textarea.form-control(style='overflow:hidden; height:130px' rows='3' required='')
-                        label.label(for='Message') Message
-                    button.btn.btn-light(href='#' role='button') submit
+                        label.label(for='Message') {{ message }}
+                    button.btn.btn-light(href='#' role='button') {{ submit }}

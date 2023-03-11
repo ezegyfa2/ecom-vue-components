@@ -5,6 +5,24 @@
 <script>
 export default {
 	name: 'Cart',
+	props: {
+		empty_message: {
+			type: String,
+			default: 'Your cart is empty, try to Add stuff.'
+		},
+		title: {
+			type: String,
+			default: 'Cart'
+		},
+		remove_text: {
+			type: String,
+			default: 'remove'
+		},
+		total_text: {
+			type: String,
+			default: 'Total'
+		},
+	},
 	data() {
 		return {
 			cClass: 'cart',
