@@ -3,18 +3,21 @@
         .dropdown.d-xl-none.d-lg-none.mr-auto
             img(src='https://png.icons8.com/windows/32/000000/menu.png' data-toggle='dropdown' data-target='#navd' aria-haspopup='true' aria-expanded='false')
             .dropdown-menu.hb(aria-labelledby='navd')
+                // left_item_sections
                 router-link.dropdown-item(to='/') Home
                 router-link.dropdown-item(to='/products') Products
                 router-link.dropdown-item(to='/contact') Contact us
-        // Logo
+                // left_item_sections
         a.navbar-brand.py-0.pl-5
             img(src='@/assets/fi-logo.svg' width='50' height='50')
-        // Header navigation
         span.navbar-item.bc.d-none.d-xl-block.d-lg-block.py-0
+            // left_item_sections
             router-link.pl-5(to='/') Home
             router-link.px-5(to='/products') Products
             router-link(to='/contact') Contact us
+            // left_item_sections
         p.navbar-item.ml-auto
+            // right_item_sections
             .searc.d-none.d-xl-block.d-lg-block.pr-3
                 input.search(type='search')
             .user
@@ -22,6 +25,7 @@
             .bag(@click='openCart')
                 img.pb-1(src='@/assets/cart.svg')
                 span.mb-3(v-if='this.bagItemscount > 0') {{ bagItemscount }}
+            // right_item_sections
     // User Modal
     #userModal.modal.fade(role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
         .modal-dialog(role='document')
@@ -44,5 +48,5 @@
                 .modal-footer
                     a.dropdown-item(href='#') Forgot password?
                     a.dropdown-item.text-right(href='#') Sign up
-    // Cart Component
+    // cart_section
     cart(ref='cartMove')

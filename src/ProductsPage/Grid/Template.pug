@@ -6,9 +6,11 @@
                     | SORT BY
                     span(style='color:#f2be00;') {{ sortButton }}
                 .dropdown-menu(aria-labelledby='dropdownMenuLink')
+                    // Section arraybe
                     a.dropdown-item(@click='sortDate') Date
                     a.dropdown-item(@click='sortPrice') Price
                     a.dropdown-item(@click='sortTrend') Trending
+                    // Section arraybe
         .row.col-6.flex-row-reverse
             .view-button
                 .dropdown

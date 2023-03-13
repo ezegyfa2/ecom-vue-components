@@ -1,9 +1,11 @@
 div
-  nav.row.justify-content-start(v-for='it in information' :key='it.id' aria-label='breadcrumb')
-    ol.breadcrumb
-      li.breadcrumb-item
-        router-link(to='/') Home
-      li.breadcrumb-item
-        router-link(to='/products') Products
-      li.breadcrumb-item {{ it.type }}
-      li.breadcrumb-item.active {{ it.title }}
+    nav.row.justify-content-start(aria-label='breadcrumb')
+        ol.breadcrumb
+            // Arraybe
+            li.breadcrumb-item
+                router-link(to='/') Home
+            li.breadcrumb-item
+                router-link(to='/products') Products
+            li.breadcrumb-item {{ it.type }}
+            li.breadcrumb-item.active {{ it.title }}
+            // Arraybe
