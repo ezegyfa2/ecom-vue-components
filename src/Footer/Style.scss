@@ -1,7 +1,9 @@
+@import '../globals.scss';
+
 .footer_area {
     position: relative;
     z-index: 1;
-    color: #2c3539;
+    color: $newsletter-color;
     background-color: #fefefe;
 }
 
