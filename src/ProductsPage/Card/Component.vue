@@ -5,7 +5,6 @@
 <script>
 	export default {
 		props: ['CardArray'],
-		name: 'Card',
 		methods: {
 			addtoCart(it) {
 				this.$store.commit('inCart', it)

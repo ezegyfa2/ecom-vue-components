@@ -4,7 +4,6 @@
 
 <script>
     export default {
-        name: 'ContactForm',
         props: {
             title: {
                 type: String,

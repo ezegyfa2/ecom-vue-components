@@ -7,7 +7,6 @@
 	import Card from '../Card/Component.vue'
 
 	export default {
-		name: 'Grid',
 		components: {
 			slider,
 			Card
