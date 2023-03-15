@@ -4,6 +4,14 @@
 
 <script>
     export default {
+        props: {
+            carousel_indicators: {
+                type: Array
+            },
+            carousel_inners: {
+                type: Array
+            }
+        }
     }
 </script>
 

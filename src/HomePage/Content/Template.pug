@@ -1,0 +1,17 @@
+.row.p-4
+  div(v-if='contentDirection === "left"')
+    .col-6
+        img.float-lg-right(src='image_url')
+    .col-12.col-sm-6
+        h1
+            | {{ title }}
+        h6
+            | {{ content }}
+  div(v-if='contentDirection === "right"')
+    .col-12.col-sm-6.text-sm-right.text-md-right.ml-sm-0.ml-md-5.ml-lg-5.ml-xl-5.text-lg-right.order-sm-first.order-12.margin-right
+        h1
+            | {{ title }}
+        h6
+            | {{ content }}
+    .col-6
+        img(src='image_url')

@@ -3,7 +3,17 @@
 </template>
 
 <script>
+    import Content from '../Content/Component.vue'
+
     export default {
+        components: {
+			Content
+		},
+        props: {
+            content_sections: {
+                type: Array
+            }
+        }
     }
 </script>
 

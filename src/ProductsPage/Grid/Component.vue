@@ -11,6 +11,11 @@
 			slider,
 			Card
 		},
+		props: {
+			dropdown_item_sections: {
+				type: Array
+			}
+		},
 		data() {
 			return {
 				cards: [],

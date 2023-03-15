@@ -3,7 +3,8 @@ div
     nav.row.justify-content-center(aria-label='breadcrumb')
         ol.breadcrumb
             // Section arraybe
-            li.breadcrumb-item
-                router-link(to='/') Home
-            li.breadcrumb-item.active(aria-current='page') Products
+            dynamic-component(
+                v-for='breadcrumbItemSection in breadcrumb_item_sections'
+                v-bind:component_infos='breadcrumbItemSection'
+            )
             // Section arraybe

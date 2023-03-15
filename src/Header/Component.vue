@@ -18,6 +18,9 @@ export default {
 		},
 		right_item_section: {
 			type: Object
+		},
+		cart_section: {
+			type: Object
 		}
 	},
 	computed: {

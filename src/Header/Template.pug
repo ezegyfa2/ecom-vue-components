@@ -4,49 +4,31 @@
             img(src='https://png.icons8.com/windows/32/000000/menu.png' data-toggle='dropdown' data-target='#navd' aria-haspopup='true' aria-expanded='false')
             .dropdown-menu.hb(aria-labelledby='navd')
                 // left_item_sections
-                router-link.dropdown-item(to='/') Home
-                router-link.dropdown-item(to='/products') Products
-                router-link.dropdown-item(to='/contact') Contact us
+                dynamic-component(
+                    v-for='routerLinkSection in router_link_sections'
+                    v-bind:component_infos='routerLinkSection'
+                )
                 // left_item_sections
         a.navbar-brand.py-0.pl-5
             img(src='@/assets/fi-logo.svg' width='50' height='50')
         span.navbar-item.bc.d-none.d-xl-block.d-lg-block.py-0
-            // left_item_sections
-            router-link.pl-5(to='/') Home
-            router-link.px-5(to='/products') Products
-            router-link(to='/contact') Contact us
+            dynamic-component(
+                    v-for='routerLinkSection in router_link_sections'
+                    v-bind:component_infos='routerLinkSection'
+                )
             // left_item_sections
         p.navbar-item.ml-auto
             // right_item_sections
-            .searc.d-none.d-xl-block.d-lg-block.pr-3
-                input.search(type='search')
-            .user
-                h5(style='cursor: pointer' data-toggle='modal' data-target='#userModal') Sign In
-            .bag(@click='openCart')
-                img.pb-1(src='@/assets/cart.svg')
-                span.mb-3(v-if='this.bagItemscount > 0') {{ bagItemscount }}
+            dynamic-component(
+                v-bind:component_infos='right_item_section'
+            )
             // right_item_sections
     // User Modal
-    #userModal.modal.fade(role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
-        .modal-dialog(role='document')
-            .modal-content
-                .modal-body
-                    button.close(type='button' data-dismiss='modal' style='outline-style:none;' aria-label='Close')
-                        span x
-                    form.px-3.py-2
-                        .form-group
-                            label(for='exampleDropdownFormEmail1') Email address
-                            input.form-control(type='email' placeholder='email@example.com')
-                        .form-group
-                            label(for='exampleDropdownFormPassword1') Password
-                            input.form-control(type='password' placeholder='Password')
-                        .form-check
-                            input.form-check-input(type='checkbox')
-                            label.form-check-label(for='dropdownCheck')
-                                | Remember me
-                        button.btn-xl.btn-success.mt-3(type='submit') Sign in
-                .modal-footer
-                    a.dropdown-item(href='#') Forgot password?
-                    a.dropdown-item.text-right(href='#') Sign up
+    dynamic-component(
+        v-bind:component_infos='modal_section'
+    )
     // cart_section
-    cart(ref='cartMove')
+    dynamic-component(
+        v-bind:ref='cartMove'
+        v-bind:component_infos='cart_section'
+    )

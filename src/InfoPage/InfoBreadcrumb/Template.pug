@@ -2,10 +2,6 @@ div
     nav.row.justify-content-start(aria-label='breadcrumb')
         ol.breadcrumb
             // Arraybe
-            li.breadcrumb-item
-                router-link(to='/') Home
-            li.breadcrumb-item
-                router-link(to='/products') Products
-            li.breadcrumb-item {{ it.type }}
-            li.breadcrumb-item.active {{ it.title }}
+            li.breadcrumb-item(v-for='breadcrumb_item in breadcrumb_items' :class="{ active: breadcrumb_item.isActive }")
+                router-link(:to='breadcrumb_item.url') {{ breadcrumb_item.text }}
             // Arraybe
