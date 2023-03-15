@@ -36,7 +36,7 @@
     @extend .height-border;
 
     width: 100%;
-    background-color: $background-color;
+    background-color: inherit !important;
     color: $newsletter-color;
     font-size: 20px;
     font-style: italic;
