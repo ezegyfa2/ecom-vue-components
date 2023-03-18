@@ -1,11 +1,11 @@
 section
     .container-fluid.py-5
         .row.d-flex
-            .col-12.col-xl-6.col-lg-6.col-md-6.col-sm-12.order-sm-0.order-12(style='margin-right:-120px;')
+            .col-12.col-xl-6.col-lg-6.col-md-6.col-sm-12.order-sm-0.order-12.margin-right
                 img.img-fluid(src='@/assets/_con.jpg')
             .col-12.col-xl-6.col-lg-5.col-md-6.col-sm-12.order-first.order-xl-0
                 h1 {{ hello_there }}
-                h2(style='color:grey') {{ sub_title }}
+                h2.text-color {{ sub_title }}
                 form
                     .form-group
                         input.form-control(type='text' required='')
@@ -14,6 +14,6 @@ section
                         input.form-control(type='email' required='')
                         label.label(for='E-mail') {{ email }}
                     .form-group
-                        textarea.form-control(style='overflow:hidden; height:130px' rows='3' required='')
+                        textarea.form-control.form-control-overflow(rows='3' required='')
                         label.label(for='Message') {{ message }}
                     button.btn.btn-light(href='#' role='button') {{ submit }}

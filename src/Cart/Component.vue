@@ -4,7 +4,6 @@
 
 <script>
 export default {
-	name: 'Cart',
 	props: {
 		empty_message: {
 			type: String,

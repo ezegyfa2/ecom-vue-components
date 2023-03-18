@@ -8,17 +8,13 @@ div
                     | {{ empty_message }}
             transition-group(name='fade')
                 // cart_item_sections
-                .row(v-for='thing in cartContent' v-bind:key='thing.id')
-                    .col4.col-xl-4.col-lg-4.col-md-4.col-sm-4
-                        img(:src='thing.img' style='width: 90px;')
-                    .col6.col-xl-6.col-lg-6.col-md-6.col-sm-6
-                        h4 {{ thing.title }}
-                        h6 {{ thing.price }}
-                    .col2.col-xl-2.col-lg-2.col-md-2.col-sm-2.pt-4
-                        span.remove-btn(@click='removeThing(thing.id)') {{ remove_text }}
+                dynamic-component(
+                    v-for='thingSection in cartContent' v-bind:key='thing.id'
+                    v-bind:component_infos='thingSection'
+                )
                 // cart_item_sections
             hr(v-if='this.cartContent.length !== 0')
-            .row.justify-content-between(style='background:#7dcf85;padding:10px 10px 10px 10px' v-if='this.cartPrice != undefined')
+            .row.justify-content-between.background(v-if='this.cartPrice != undefined')
                 .flex-column.pl-3
                     h4 {{ total_text }}
                 .flex-column.pr-3

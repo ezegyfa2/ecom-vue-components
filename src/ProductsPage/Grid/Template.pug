@@ -4,12 +4,13 @@
             .dropdown
                 a#dropdownMenuLink.btn.btn-light.dropdown-toggle(role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                     | SORT BY
-                    span(style='color:#f2be00;') {{ sortButton }}
+                    span.span-color {{ sortButton }}
                 .dropdown-menu(aria-labelledby='dropdownMenuLink')
                     // Section arraybe
-                    a.dropdown-item(@click='sortDate') Date
-                    a.dropdown-item(@click='sortPrice') Price
-                    a.dropdown-item(@click='sortTrend') Trending
+                    dynamic-component(
+                        v-for='dropdownItemSection in dropdown_item_sections'
+                        v-bind:component_infos='dropdownItemSection'
+                    )
                     // Section arraybe
         .row.col-6.flex-row-reverse
             .view-button
@@ -22,10 +23,10 @@
                         a.dropdown-item(@click="sortI('sofa')") Sofas
                         .dropdown-divider
                         .pl-3
-                            span.circle(style='background-color:yellow' @click="sortI('yellow')")
-                                span.circle(style='background-color:blue' @click="sortI('blue')")
-                                    span.circle(style='background-color:white' @click="sortI('white')")
-                                        span.circle(style='background-color:red' @click="sortI('red')")
+                            span.circle.circle-bakcground1(@click="sortI('yellow')")
+                                span.circle.circle-bakcground2(@click="sortI('blue')")
+                                    span.circle.circle-bakcground3(@click="sortI('white')")
+                                        span.circle.circle-bakcground4(@click="sortI('red')")
                         .dropdown-divider
                         a.dropdown-item(@click='reSet') Reset
         .row.justify-content-center
@@ -46,17 +47,17 @@
                             br
                             .co
                                 h5 Color
-                                span.circle(style='background-color:yellow' @click="sortI('yellow')")
-                                span.circle(style='background-color:blue' @click="sortI('blue')")
-                                span.circle(style='background-color:white' @click="sortI('white')")
-                                span.circle(style='background-color:red' @click="sortI('red')")
+                                span.circle.circle-background1(@click="sortI('yellow')")
+                                span.circle.circle-background2(@click="sortI('blue')")
+                                span.circle.circle-background3(@click="sortI('white')")
+                                span.circle.circle-background4(@click="sortI('red')")
                             br
                             br
                             h5 Price Range
                             slider(@clicked='valueSlider')
             .row.col-xl-9.col-lg-9.col-md-12.col-sm-12.col-xs-12.text-center
                 .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12(v-if='this.cards == 0')
-                    h4(style='margin-left:9rem;margin-right:9rem') Sorry, we can&apos;t find a product with this features
+                    h4.margins Sorry, we can&apos;t find a product with this features
                 card(:cardarray='slicedCards')
                     .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12.py-5
                         button.btn.btn-outline-secondary.btn-lg.btn-block(type='button' @click='incCardNumber') More +

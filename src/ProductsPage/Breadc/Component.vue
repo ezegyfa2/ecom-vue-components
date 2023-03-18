@@ -4,7 +4,11 @@
 
 <script>
     export default {
-        name: 'Breadc'
+        props: {
+            breadcrumb_item_sections: {
+                type: Array
+            }
+        }
     }
 </script>
 

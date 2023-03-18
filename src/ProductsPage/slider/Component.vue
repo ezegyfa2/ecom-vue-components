@@ -6,7 +6,6 @@
 	import vueSlider from 'vue-slider-component'
 
 	export default {
-		name: 'slider',
 		components: {
 			vueSlider
 		},

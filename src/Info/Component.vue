@@ -9,7 +9,6 @@
 	import Card from '@/Components/ProductsPage/Card.vue'
 
 	export default {
-		name: 'Info',
 		components: {
 			InfoBreadcrumb,
 			InfoBox,
