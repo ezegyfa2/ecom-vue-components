@@ -3,6 +3,11 @@ footer.footer_area
         .row.justify-content-between
             .col-3.col-xl-2.col-lg-3.col-md-3.col-sm-3
                 .footer-widget
+                    dynamic-component(
+                        v-for='thingSection in cartContent' v-bind:key='thing.id'
+                        v-bind:component_infos='thingSection'
+                    )
+                    // column1_sections
                     .footer-title Navigate
                     ul.list-unstyled
                         router-link(to='/')
@@ -13,8 +18,10 @@ footer.footer_area
                             li Contact Us
                         router-link(to='/')
                             li Sitemap
+                    // column1_sections
             .col-3.col-xl-2.col-lg-3.col-md-3.col-sm-3
                 .footer-widget
+                    // column2_sections
                     .footer-title Collection
                     ul.list-unstyled
                         router-link(to='/products')
@@ -25,8 +32,10 @@ footer.footer_area
                             li Catalog
                         router-link(to='/products')
                             li Brands
+                    // column2_sections
             .col-3.col-xl-2.col-lg-3.col-md-3.col-sm-3
                 .footer-widget
+                    // column3_sections
                     .footer-title Catagories
                     ul.list-unstyled
                         router-link(to='/products')
@@ -37,20 +46,27 @@ footer.footer_area
                             li Chairs
                         router-link(to='/products')
                             li Sofas
+                    // column3_sections
             .col-12.col-xl-6.col-lg-3.col-md-3.col-sm-12.text-left.text-md-right.pb-5
                 .footer-widget
+                    // right_sections
                     h4 399 Crowfield Road,
                     h4 Phoenix, Arizona 85012
                     a(href='mailto:#') asff@fdsfsdc.com
                     h6 +602-926-5809
+                    // right_sections
         .row.justify-content-between
             .col-xl-7.col-lg-6.col-md-6.col-sm-6.col-6
+                // bottom_left_section
                 .tiny-footer
                     p Copyright &copy; All Rights Reserved 2020 
+                // bottom_left_section
             .col-4.col-xl-4.col-lg-4.col-md-4.col-sm-4.text-right
+                // bottom_right_section
                 .social-info
                     strong Get social
                     img.twitter(src='@/assets/twitter.png')
                     img.pinterest(src='@/assets/pinterest.png')
                     img.facebook(src='@/assets/facebook.png')
                     img.instagram(src='@/assets/insta.png')
+                // bottom_right_section
