@@ -10,7 +10,10 @@ export default {
 		Cart
 	},
 	props: {
-		router_link_sections: {
+		title_url: {
+			type: String
+		},
+		left_item_sections: {
 			type: Array
 		},
 		modal_section: {

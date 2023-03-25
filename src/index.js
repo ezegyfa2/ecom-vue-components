@@ -1,100 +1,29 @@
 export default {
   install(Vue) {
-    registerVueComponent(
-      'ecom-cart',
-      require('./Cart/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/Cart/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-contact-form',
-      require('./ContactPage/ContactForm/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/ContactPage/ContactForm/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-footer',
-      require('./Footer/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/Footer/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-header',
-      require('./Header/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/Header/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-homepage-about-us',
-      require('./HomePage/AboutUs/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/HomePage/AboutUs/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-homepage-carousel',
-      require('./HomePage/Carousel/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/HomePage/Carousel/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-homepage-content',
-      require('./HomePage/Content/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/HomePage/Content/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-info',
-      require('./Info/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/Info/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-info-page-info-box',
-      require('./InfoPage/InfoBox/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/InfoPage/InfoBox/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-info-page-info-breadcrumb',
-      require('./InfoPage/InfoBreadcrumb/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/InfoPage/InfoBreadcrumb/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-info-page-info-text',
-      require('./InfoPage/InfoText/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/InfoPage/InfoText/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-newsletter',
-      require('./Newsletter/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/Newsletter/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-products-page-breadc',
-      require('./ProductsPage/Breadc/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/ProductsPage/Breadc/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-products-page-card',
-      require('./ProductsPage/Card/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/ProductsPage/Card/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-products-page-grid',
-      require('./ProductsPage/Grid/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/ProductsPage/Grid/Component.vue'
-    );
-    registerVueComponent(
-      'ecom-products-page-slider',
-      require('./ProductsPage/slider/Component.vue').default,
-      Vue,
-      'ecom-vue-components/src/ProductsPage/slider/Component.vue'
-    );
-  },
-};
+      require('js-helper-methods')
+      require('./Templates/templateRegister.js').default.install()
+      
+      Vue.component('dynamic-component', require('../../helper-vue-components/src/DynamicComponent/Component.vue').default)
+      Vue.component('dynamic-template', require('../../helper-vue-components/src/Template/Component.vue').default)
+      Vue.component('landing-page', require('../../helper-vue-components/src/LandingPage/Component.vue').default)
+      Vue.component('dynamic-web-navigation-bar', require('../../dynamic-web-vue-components/src/NavigationBar/NavigationBar/Component.vue').default)
+      Vue.component('dynamic-web-navigation-link', require('../../dynamic-web-vue-components/src/NavigationBar/Links/NavigationLink/Component.vue').default)
+      Vue.component('dynamic-web-dropdown-navigation-link', require('../../dynamic-web-vue-components/src/NavigationBar/Links/DropdownNavigationLink/NavigationLink/Component.vue').default)
+      Vue.component('dynamic-web-link-dropdown-item', require('../../dynamic-web-vue-components/src/NavigationBar/Links/DropdownNavigationLink/Dropdowns/LinkItem/Component.vue').default)
+      Vue.component('dynamic-web-list-dropdown', require('../../dynamic-web-vue-components/src/NavigationBar/Links/DropdownNavigationLink/Dropdowns/ListDropdown/Component.vue').default)
+      Vue.component('dynamic-web-footer', require('../../dynamic-web-vue-components/src/Footer/Component.vue').default)
+      Vue.component('wertically-icon-links', require('../../helper-vue-components/src/IconLinks/WerticallyIconLinks/Component.vue').default)
+      Vue.component('dynamic-web-button-icon-link', require('../../dynamic-web-vue-components/src/ButtonIconLink/Component.vue').default)
+      Vue.component('dynamic-web-dark-link', require('../../dynamic-web-vue-components/src/DarkLink/Component.vue').default)
+      Vue.component('dynamic-web-success-session-message', require('../../dynamic-web-vue-components/src/SessionMessages/SuccessMessage/Component.vue').default)
+      
+      require('./ContactForm/Register.js').default.install(Vue)
+
+      Vue.component('dynamic-web-contact-form', require('../../dynamic-web-vue-components/src/ContactForm/Form/Component.vue').default)
+      Vue.component('dynamic-web-white-medium-text-content', require('../../dynamic-web-vue-components/src/TextContents/WhiteMediumTextContent/Component.vue').default)
+      Vue.component('button-icon-link2', require('../../helper-vue-components/src/IconLinks/ButtonIconLink2/Component.vue').default)
+      Vue.component('vue-link', require('../../helper-vue-components/src/Link/Component.vue').default)
+      Vue.component('csrf-input', require('../../helper-vue-components/src/CsrfInput/Component.vue').default)
+      Vue.component('form-item-with-validation-errors', require('../../helper-vue-components/src/Form/FormItemsWithoutLabel/FormItemWithValidationErrors/Component.vue').default)
+  }
+}

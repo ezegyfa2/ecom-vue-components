@@ -3,7 +3,12 @@
 </template>
 
 <script>
+    import Form from '../../../../helper-vue-components/src/Form/Form/Component.vue'
+
     export default {
+        mixins: [
+            Form,
+        ],
         props: {
             title: {
                 type: String,
@@ -12,22 +17,6 @@
             sub_title: {
                 type: String,
                 default: 'got a thought to discuss?'
-            },
-            name: {
-                type: String,
-                default: 'Name'
-            },
-            email: {
-                type: String,
-                default: 'E-mail'
-            },
-            message: {
-                type: String,
-                default: 'Message'
-            },
-            submit: {
-                type: String,
-                default: 'submit'
             }
         }
     }

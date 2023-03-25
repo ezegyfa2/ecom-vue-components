@@ -3,31 +3,24 @@
         .dropdown.d-xl-none.d-lg-none.mr-auto
             img(src='https://png.icons8.com/windows/32/000000/menu.png' data-toggle='dropdown' data-target='#navd' aria-haspopup='true' aria-expanded='false')
             .dropdown-menu.hb(aria-labelledby='navd')
-                // left_item_sections
                 dynamic-component(
-                    v-for='routerLinkSection in router_link_sections'
-                    v-bind:component_infos='routerLinkSection'
+                    v-for='leftItemSection in left_item_sections'
+                    v-bind:component_infos='leftItemSection'
                 )
-                // left_item_sections
-        a.navbar-brand.py-0.pl-5
+        a.navbar-brand.py-0.pl-5(v-bind:href='title_url')
             img(src='@/assets/fi-logo.svg' width='50' height='50')
         span.navbar-item.bc.d-none.d-xl-block.d-lg-block.py-0
             dynamic-component(
-                    v-for='routerLinkSection in router_link_sections'
-                    v-bind:component_infos='routerLinkSection'
-                )
-            // left_item_sections
+                v-for='leftItemSection in left_item_sections'
+                v-bind:component_infos='leftItemSection'
+            )
         p.navbar-item.ml-auto
-            // right_item_sections
             dynamic-component(
                 v-bind:component_infos='right_item_section'
             )
-            // right_item_sections
-    // User Modal
     dynamic-component(
         v-bind:component_infos='modal_section'
     )
-    // cart_section
     dynamic-component(
         v-bind:ref='cartMove'
         v-bind:component_infos='cart_section'
