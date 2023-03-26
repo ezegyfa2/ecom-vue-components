@@ -1,3 +1,5 @@
+@import '../globals.scss';
+
 form {
     width: 100%;
     padding: 50px 0;
@@ -30,7 +32,7 @@ form {
     font-weight: 100;
     width: 100%;
     height: 40px;
-    transition: all 0.5s;
+    transition: $form-group-transition;
     z-index: 1;
     position: relative;
     border-radius: 0;
@@ -42,17 +44,17 @@ form {
 .form-group input:focus ~ label,
 .form-group textarea:valid ~ label,
 .form-group textarea:focus ~ label {
-    color: #71acd6;
+    color: $form-group-color;
     font-size: 1rem;
     top: -15px;
-    transition: all 0.5s;
+    transition: $form-group-transition;
 }
 
 .form-group input:valid,
 .form-group input:focus,
 .form-group textarea:valid,
 .form-group textarea:focus {
-    border-color: #71acd6;
+    border-color: $form-group-color;
 }
 
 form button {
@@ -65,4 +67,17 @@ form button {
     cursor: pointer;
     box-shadow: 0 26px 38px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.margin-right {
+    margin-right: -120px;
+}
+
+.text-color {
+    color: grey;
+}
+
+.form-control-overflow {
+    overflow: hidden; 
+    height:130px
 }

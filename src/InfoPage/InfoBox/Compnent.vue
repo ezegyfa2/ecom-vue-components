@@ -5,7 +5,6 @@
 <script>
 export default {
 	props: ['information'],
-	name: 'InfoBox',
 	data() {
 		return {
 			quan: 1,

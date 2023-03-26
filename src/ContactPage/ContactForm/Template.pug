@@ -1,19 +1,25 @@
 section
     .container-fluid.py-5
         .row.d-flex
-            .col-12.col-xl-6.col-lg-6.col-md-6.col-sm-12.order-sm-0.order-12(style='margin-right:-120px;')
+            .col-12.col-xl-6.col-lg-6.col-md-6.col-sm-12.order-sm-0.order-12.margin-right
                 img.img-fluid(src='@/assets/_con.jpg')
             .col-12.col-xl-6.col-lg-5.col-md-6.col-sm-12.order-first.order-xl-0
-                h1 Hello there
-                h2(style='color:grey') got a thought to discuss?
-                form
-                    .form-group
-                        input.form-control(type='text' required='')
-                        label.label(for='name') Name
-                    .form-group
-                        input.form-control(type='email' required='')
-                        label.label(for='E-mail') E-mail
-                    .form-group
-                        textarea.form-control(style='overflow:hidden; height:130px' rows='3' required='')
-                        label.label(for='Message') Message
-                    button.btn.btn-light(href='#' role='button') submit
+                h1 {{ hello_there }}
+                h2.text-color {{ sub_title }}
+                form(
+                    v-bind:action='url'
+                    v-bind:method='method'
+                    v-on:submit='submitForm'
+                )
+                    csrf-input
+                    component(
+                        v-for='formItemSection in form_item_sections'
+                        v-bind:key='formItemSection.data.name'
+                        v-bind:ref='formItemSection.data.name'
+                        v-bind:is='getConvertedType(formItemSection.type)'
+                        v-bind='formItemSection.data'
+                        v-bind:value='formItemSection.data.value'
+                        v-on:update:value='(newValue) => { formItemSection.data.value = newValue }'
+                    )
+                    .form-item
+                        button.btn.btn-primary.form-item-control.text-align-center(type='submit' @click='submitForm') {{ button_title }}

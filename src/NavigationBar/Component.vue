@@ -6,9 +6,25 @@
 import Cart from '@/Components/Cart.vue'
 
 export default {
-	name: 'Header',
 	components: {
 		Cart
+	},
+	props: {
+		title_url: {
+			type: String
+		},
+		left_item_sections: {
+			type: Array
+		},
+		modal_section: {
+			type: Object
+		},
+		right_item_section: {
+			type: Object
+		},
+		cart_section: {
+			type: Object
+		}
 	},
 	computed: {
 		bagItemscount() {

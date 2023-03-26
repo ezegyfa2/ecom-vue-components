@@ -1,13 +1,11 @@
 section.carousel
     #heroControls.carousel.slide(data-ride='carousel')
         ol.carousel-indicators
-            li.active(data-target='#heroControls' data-slide-to='0')
-            li(data-target='#heroControls' data-slide-to='1')
-            li(data-target='#heroControls' data-slide-to='2')
+            // Arraybe
+            li(v-for='(carouselIndicator, index) in carousel_indicators' :class="{ active: carouselIndicator.isActive }" :data-target='carouselIndicator.dataTarget' :data-slide-to='index')
+            // Arraybe
         .carousel-inner
-            .carousel-item.active
-                img.img-fluid(src='@/assets/jum1.jpg' alt='First slide')
-            .carousel-item
-                img.img-fluid(src='@/assets/jum2.jpg' alt='Second slide')
-            .carousel-item
-                img.img-fluid(src='@/assets/jum3.jpg' alt='Third slide')
+            // Arraybe
+            .carousel-item(v-for='carouselInner in carousel_inners' :class="{ active: carouselInner.isActive }")
+                img.img-fluid(:src='carouselInner.src' :alt='carouselInner.alt')
+            // Arraybe

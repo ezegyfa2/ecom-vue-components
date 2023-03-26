@@ -7,10 +7,14 @@
 	import Card from '../Card/Component.vue'
 
 	export default {
-		name: 'Grid',
 		components: {
 			slider,
 			Card
+		},
+		props: {
+			dropdown_item_sections: {
+				type: Array
+			}
 		},
 		data() {
 			return {

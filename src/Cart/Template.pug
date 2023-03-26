@@ -1,24 +1,6 @@
-div
-    div(:class='cClass')
-        .cart-menu
-            h1.text-center Cart
-            hr
-            transition(name='fade')
-                .text-center.font-italic(v-if='this.cartContent.length === 0')
-                    | Your cart is empty, try to Add stuff.
-            transition-group(name='fade')
-                .row(v-for='thing in cartContent' v-bind:key='thing.id')
-                    .col4.col-xl-4.col-lg-4.col-md-4.col-sm-4
-                        img(:src='thing.img' style='width: 90px;')
-                    .col6.col-xl-6.col-lg-6.col-md-6.col-sm-6
-                        h4 {{ thing.title }}
-                        h6 {{ thing.price }}
-                    .col2.col-xl-2.col-lg-2.col-md-2.col-sm-2.pt-4
-                        span.remove-btn(@click='removeThing(thing.id)') remove
-            hr(v-if='this.cartContent.length !== 0')
-            .row.justify-content-between(style='background:#7dcf85;padding:10px 10px 10px 10px' v-if='this.cartPrice != undefined')
-                .flex-column.pl-3
-                    h4 Total
-                .flex-column.pr-3
-                    h4 ${{ cartPrice }}
-    div(:class='modalClass' @click='cartON')
+cart(
+    v-bind:item_sections='itemSections'
+    v-bind:title='title'
+    v-bind:remove_text='remove_text'
+    v-bind:total_text='total_text'
+)

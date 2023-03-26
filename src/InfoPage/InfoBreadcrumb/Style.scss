@@ -1,10 +1,12 @@
+@import '../../globals.scss';
+
 .breadcrumb {
     background: inherit;
   }
   
   .breadcrumb > li > a {
     text-decoration: none;
-    color: #2c3539 !important;
+    color: $newsletter-color !important;
     font-size: 18px;
   }
   .breadcrumb > li > a:hover {
@@ -13,6 +15,6 @@
   
   .breadcrumb-item.active {
     text-decoration: none !important;
-    color: #f2be00 !important;
+    color: $breadcrump-li--item-color !important;
   }
   

@@ -4,7 +4,6 @@
 
 <script>
 	export default {
-		name: 'Newsletter',
 		methods: {
 			haSubmit() {
 				return alert('Thank you for subscribing')

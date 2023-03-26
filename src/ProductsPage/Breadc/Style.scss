@@ -1,16 +1,17 @@
+@import '../../globals.scss';
+
 .breadcrumb {
     background: inherit !important;
-    color: #2c3539 !important;
+    color: $newsletter-color !important;
     font-size: 20px;
 }
   
 .breadcrumb > li > a {
     text-decoration: none !important;
-    color: #2c3539 !important;
+    color: $newsletter-color !important;
 }
 
 .breadcrumb > li {
     text-decoration: none !important;
-    color: #f2be00 !important;
+    color: $breadcrump-li--item-color !important;
 }
-  

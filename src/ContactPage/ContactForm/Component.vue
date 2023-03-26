@@ -3,8 +3,22 @@
 </template>
 
 <script>
+    import Form from '../../../../helper-vue-components/src/Form/Form/Component.vue'
+
     export default {
-        name: 'ContactForm'
+        mixins: [
+            Form,
+        ],
+        props: {
+            title: {
+                type: String,
+                default: 'Hello there'
+            },
+            sub_title: {
+                type: String,
+                default: 'got a thought to discuss?'
+            }
+        }
     }
 </script>
 
