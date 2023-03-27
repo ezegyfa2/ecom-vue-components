@@ -1,0 +1,11 @@
+img {
+    width: 90px;
+}
+
+.remove-btn{
+    border-radius: 50%;
+    content: url('../assets/multiply.png')
+  }
+.remove-btn:hover {
+    background-color: grey;
+  }
