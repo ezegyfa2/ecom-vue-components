@@ -17,6 +17,9 @@
             sub_title: {
                 type: String,
                 default: 'got a thought to discuss?'
+            },
+            img_url: {
+                type: String,
             }
         }
     }
