@@ -7,8 +7,9 @@
                     v-for='leftItemSection in left_item_sections'
                     v-bind:component_infos='leftItemSection'
                 )
-        a.navbar-brand.py-0.pl-5(v-bind:href='title_url')
-            img(src='@/assets/fi-logo.svg' width='50' height='50')
+        dynamic-component(
+            v-bind:component_infos='title_section'
+        )
         span.navbar-item.bc.d-none.d-xl-block.d-lg-block.py-0
             dynamic-component(
                 v-for='leftItemSection in left_item_sections'
@@ -22,6 +23,6 @@
         v-bind:component_infos='modal_section'
     )
     dynamic-component(
-        v-bind:ref='cartMove'
+        ref='cartMove'
         v-bind:component_infos='cart_section'
     )

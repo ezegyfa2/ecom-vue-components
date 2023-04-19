@@ -3,40 +3,35 @@
 </template>
 
 <script>
-import Cart from '@/Components/Cart.vue'
-
-export default {
-	components: {
-		Cart
-	},
-	props: {
-		title_url: {
-			type: String
+	export default {
+		props: {
+			title_section: {
+				type: Object
+			},
+			left_item_sections: {
+				type: Array
+			},
+			modal_section: {
+				type: Object
+			},
+			right_item_section: {
+				type: Object
+			},
+			cart_section: {
+				type: Object
+			}
 		},
-		left_item_sections: {
-			type: Array
+		computed: {
+			bagItemscount() {
+				return this.$store.getters.itemsNumber
+			}
 		},
-		modal_section: {
-			type: Object
-		},
-		right_item_section: {
-			type: Object
-		},
-		cart_section: {
-			type: Object
-		}
-	},
-	computed: {
-		bagItemscount() {
-			return this.$store.getters.itemsNumber
-		}
-	},
-	methods: {
-		openCart() {
-			this.$refs.cartMove.cartON()
+		methods: {
+			openCart() {
+				this.$refs.cartMove.cartON()
+			}
 		}
 	}
-}
 </script>
 
 <style lang="scss" scoped >

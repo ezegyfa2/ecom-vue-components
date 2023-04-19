@@ -15,5 +15,8 @@
     "bugs": {
         "url": "https://github.com/ezegyfa2/ecom-vue-components/issues"
     },
-    "homepage": "https://github.com/ezegyfa2/ecom-vue-components#readme"
+    "homepage": "https://github.com/ezegyfa2/ecom-vue-components#readme",
+    "dependencies": {
+        "helper-vue-components": "*"
+    }
 }
