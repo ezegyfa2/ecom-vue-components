@@ -4,7 +4,44 @@ export default {
         navbar_section: {
             template_type_name: 'ecom_navigation_bar',
         },
-        // content_sections: "++content_sections",
+        content_sections: [
+            {
+                type: 'ecom-carousel',
+                data: {
+                    carousel_indicators: [
+                        {
+                            isActive: true,
+                            dataTarget: '#heroControls'
+                        },
+                        {
+                            isActive: false,
+                            dataTarget: '#heroControls'
+                        },
+                        {
+                            isActive: false,
+                            dataTarget: '#heroControls'
+                        },
+                    ],
+                    carousel_inners: [
+                        {
+                            isActive: true,
+                            src: 'images/jum1.jpg',
+                            alt: 'First slide'
+                        },
+                        {
+                            isActive: false,
+                            src: 'images/jum2.jpg',
+                            alt: 'Second slide'
+                        },
+                        {
+                            isActive: false,
+                            src: 'images/jum3.jpg',
+                            alt: 'Third slide'
+                        },
+                    ]
+                }
+            },
+        ]
         // footer_section: {
         //     "template_type_name": "dynamic_web_footer",
         //     "params": {
