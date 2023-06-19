@@ -10,33 +10,35 @@ export default {
         },
         left_item_sections: [
             {
-                type: 'icon-link-with-right-text',
+                type: 'ecom-icon-link-with-right-text',
                 data: {
-                    content: 'ecom item',
-                    icon_class: 'fa-solid fa-droplet'
+                    content: 'home',
                 }
             },
             {
-                type: 'icon-link-with-right-text',
+                type: 'ecom-icon-link-with-right-text',
                 data: {
-                    content: 'ecom item',
-                    icon_class: 'fa-solid fa-droplet'
+                    content: 'products',
                 }
             },
             {
-                type: 'icon-link-with-right-text',
+                type: 'ecom-icon-link-with-right-text',
                 data: {
-                    content: 'ecom item',
-                    icon_class: 'fa-solid fa-droplet'
+                    content: 'contact us',
                 }
             }
         ],
         right_item_section: {
-            type: 'icon-link-with-right-text',
+            type: 'ecom-icon-link-with-right-text',
             data: {
-                content: 'ecom item',
-                icon_class: 'fa-solid fa-droplet'
+                content: 'sign in',
             }
-        }
+        },
+        shop_cart_item_section: {
+            type: 'ecom-icon-link-with-right-text',
+            data: {
+                url: 'images/cart.svg',
+            }
+        },
     },
 }

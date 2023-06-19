@@ -17,6 +17,9 @@
 			right_item_section: {
 				type: Object
 			},
+			shop_cart_item_section: {
+				type: Object
+			},
 			cart_section: {
 				type: Object
 			}

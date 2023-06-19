@@ -2,10 +2,14 @@
 
 nav {
     z-index: 100;
+    font-family: $body-font-family;
+    font-weight: 400;
 }
+
 .navbar {
-    border-bottom: 1px solid #dcdcdc;
-    background-color: #f8f8f8;
+    border-bottom: 1px solid $menu-border-color;
+    background-color: $menu-bg-color;
+    height: 67px;
 }
 
 .close {
@@ -15,16 +19,36 @@ nav {
     font-size: 31px;
     color: #000;
 }
-.navbar-item.bc a {
-    font-size: 17px;
-    text-decoration: none;
-    color: black;
+
+.navbar-item.bc {
+    display: flex;
+
+    a {
+        font-size: 17px;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        padding-left: 3rem;
+
+        &:hover, &:active {
+            color: $menu-hover-color;
+        }
+    }
 }
 
-.navbar-item.bc a:hover,
-.navbar-item.bc a:active {
-    color: #ffd700;
+.underline-link {
+    a {
+        font-size: 17px;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+
+        &:hover, &:active {
+            text-decoration: underline;
+        }
+    }
 }
+    
 .btn-sm {
     border-radius: 0;
 }
