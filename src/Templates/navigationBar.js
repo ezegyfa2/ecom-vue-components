@@ -35,9 +35,10 @@ export default {
             }
         },
         shop_cart_item_section: {
-            type: 'ecom-icon-link-with-right-text',
+            type: 'ecom-icon-link-with-image',
             data: {
-                url: 'images/cart.svg',
+                url: '',
+                img_url: 'images/cart.svg',
             }
         },
     },
