@@ -3,13 +3,21 @@
 </template>
 
 <script>
-	import Carousel from '@/Components/HomePage/Carousel.vue'
-	import AboutUs from '@/Components/HomePage/AboutUs.vue'
-
 	export default {
-		components: {
-			Carousel,
-			AboutUs
+		props: {
+			navbar_section: {
+				type: Object
+			},
+			content_sections: {
+				type: Array
+			},
+			footer_section: {
+				type: Object
+			},
 		}
 	}
 </script>
+
+<style lang="scss" scoped>
+    @import "Style.scss";
+</style>
