@@ -1,24 +1,23 @@
 <template lang="pug">
-  include Template.pug
+    include Template.pug
 </template>
 
 <script>
-  export default {
-    props: {
-      contentDirection: 'left',
-      title: {
-        type: String
-      },
-      content: {
-        type: String
-      },
-      image_url: {
-        type: String
-      },
+    import Description from '../../../../description-vue-components/src/Description.vue';
+
+    export default {
+        mixins: [
+            Description
+        ],
+        computed: {
+            textOrientationClass() {
+                //Reversed becouse the left_orientation indicate the image position
+                return this.left_orientation ?  "text-lg-right" : "";
+            }
+        }
     }
-  }
 </script>
 
 <style lang="scss" scoped>
-  @import "Style.scss";
+    @import "Style.scss";
 </style>

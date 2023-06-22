@@ -1,4 +1,7 @@
-.margin-right {
-  margin-right: -8%; 
-  z-index:1;
+@import "../../globals.scss";
+
+.about-us img {
+    width: 90%;
+    min-width: 380px;
 }
+

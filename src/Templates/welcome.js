@@ -1,5 +1,5 @@
 export default {
-    type: 'page-with-facebook-events',
+    type: 'ecom-home',
     data: {
         navbar_section: {
             template_type_name: 'ecom_navigation_bar',
@@ -41,6 +41,15 @@ export default {
                     ]
                 }
             },
+            {
+                template_type_name: 'ecom_about_us'
+            },
+            {
+                type: 'ecom-newsletter',
+                data: {
+                    
+                }
+            }
         ]
         // footer_section: {
         //     "template_type_name": "dynamic_web_footer",

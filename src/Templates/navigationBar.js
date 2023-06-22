@@ -39,6 +39,7 @@ export default {
             data: {
                 url: '',
                 img_url: 'images/cart.svg',
+                img_alt: 'cart',
             }
         },
     },

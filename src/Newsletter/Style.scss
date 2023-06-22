@@ -32,19 +32,6 @@
     z-index: 1;
 }
 
-.newsletter-area .newsletter-form form .nl-email {
-    @extend .height-border;
-
-    width: 100%;
-    background-color: inherit !important;
-    color: $newsletter-color;
-    font-size: 20px;
-    font-style: italic;
-    outline: none;
-    border-bottom: 2px solid #2c3539;
-    padding: 0 30px;
-}
-
 .newsletter-area .newsletter-form .input-button {
     @extend .height-border;
 

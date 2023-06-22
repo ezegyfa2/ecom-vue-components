@@ -12,6 +12,9 @@
         props: {
             img_url: {
                 type: String
+            },
+            img_alt: {
+                type: String
             }
         }
     }
