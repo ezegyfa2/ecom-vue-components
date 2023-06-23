@@ -61,10 +61,22 @@ export default {
             'ecom-vue-components/Newsletter/Component.vue'
         )
         registerVueComponent(
+            'ecom-text-content',
+            require('./HomePage/TextContent/Component.vue').default,
+            Vue,
+            'dynamic-web-vue-components/HomePage/TextContent/Component.vue'
+        )
+        registerVueComponent(
             'ecom-form-input-email',
             require('./FormItems/Inputs/Email/Component.vue').default,
             Vue,
             'dynamic-web-vue-components/FormItems/Inputs/Email/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-footer',
+            require('./Footer/Component.vue').default,
+            Vue,
+            'ecom-vue-components/Footer/Component.vue'
         )
     },
 }

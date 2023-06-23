@@ -44,35 +44,30 @@ export default {
             {
                 template_type_name: 'ecom_about_us'
             },
-            {
-                type: 'ecom-newsletter',
-                data: {
-                    
+        ],
+        newsletter_section: {
+            type: 'ecom-newsletter',
+            data: {
+                newsletter_text: {
+                    type: 'ecom-text-content',
+                    data: {
+                        title: 'Join our Newsletter',
+                        content: 'Nulla ac convallis lorem, eget euismod nisl. bibendum nec.'
+                    },
+                },
+                newsletter_form: {
+                    newsletter_input_section: {
+                        type: 'ecom-form-input-email',
+                        data: {
+                            placeholder: 'Your E-mail',
+                        },
+                    },
+                    button_title: 'Submit'
                 }
             }
-        ]
-        // footer_section: {
-        //     "template_type_name": "dynamic_web_footer",
-        //     "params": {
-        //         "icons": [
-        //             {
-        //                 "url": "https://www.facebook.com/profile.php?id=100084068406799",
-        //                 "icon_class": "fab fa-facebook-f"
-        //             },
-        //             {
-        //                 "url": "",
-        //                 "icon_class": "fa-brands fa-linkedin-in"
-        //             }
-        //         ],
-        //         "privacy_policy": {
-        //             "url": "",
-        //             "content": "--layout.footer.privacy_policy"
-        //         },
-        //         "copyright": {
-        //             "company_name": "--layout.footer.copyright.company_name",
-        //             "content": "--layout.footer.copyright.content"
-        //         }
-        //     }
-        // }
+        },
+        footer_section: {
+            template_type_name: 'ecom_footer',
+        }
     }
 }

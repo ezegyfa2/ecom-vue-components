@@ -11,6 +11,9 @@
 			content_sections: {
 				type: Array
 			},
+			newsletter_section: {
+				type: Object
+			},
 			footer_section: {
 				type: Object
 			},

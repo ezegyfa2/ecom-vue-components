@@ -4,6 +4,14 @@
 
 <script>
 	export default {
+		props: {
+			newsletter_text: {
+				type: Object
+			},
+			newsletter_form: {
+				type: Object
+			}
+		},
 		methods: {
 			haSubmit() {
 				return alert('Thank you for subscribing')

@@ -38,7 +38,7 @@
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     background-color: $newsletter-color;
-    color: #fff;
+    color: $second-bg-color;
     font-size: 18px;
     padding: 0px 30px;
     cursor: pointer;
@@ -52,7 +52,7 @@
 .newsletter-area .newsletter-form .input-button:hover,
 .newsletter-area .newsletter-form .input-button:focus {
     background-color: inherit;
-    color: black;
+    color: $body-text-color;
 }
 
 .height-border {

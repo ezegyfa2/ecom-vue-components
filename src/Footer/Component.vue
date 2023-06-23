@@ -4,6 +4,29 @@
 
 <script>
     export default {
+        props: {
+            cartContent: {
+                type: Array
+            },
+            column1_sections: {
+                type: Object
+            },
+            column2_sections: {
+                type: Object
+            },
+            column3_sections: {
+                type: Object
+            },
+            right_sections: {
+                type: Object
+            },
+            bottom_left_section: {
+                type: Object
+            },
+            bottom_right_section: {
+                type: Object
+            },
+        }
     }
 </script>
 

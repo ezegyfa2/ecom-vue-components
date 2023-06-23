@@ -1,0 +1,14 @@
+@import '../../globals.scss';
+
+.text-center {
+    text-align: left !important;
+}
+
+.title {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+}

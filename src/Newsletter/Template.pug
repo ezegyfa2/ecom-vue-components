@@ -3,12 +3,14 @@ section.newsletter-area
         .row.justify-content-between
             // Newsletter Text
             .col-12.col-lg-6
-                .newsletter-text
-                    h2 Join our Newsletter
-                    p Nulla ac convallis lorem, eget euismod nisl. bibendum nec.
+                dynamic-component.newsletter-text(
+                    v-bind:component_infos='newsletter_text'
+                )
             // Newsletter Form
             .col-12.col-lg-4
                 .newsletter-form
                     form
-                        ecom-form-input-email(placeholder='Your E-mail')
-                        button.input-button(@click.prevent='haSubmit') Submit
+                        dynamic-component(
+                            v-bind:component_infos='newsletter_form.newsletter_input_section'
+                        )
+                        button.input-button(@click.prevent='haSubmit') {{ newsletter_form.button_title }}
