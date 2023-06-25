@@ -1,10 +1,14 @@
 <template lang="pug">
-  	include Template.pug
+    include Template.pug
 </template>
 
 <script>
 	export default {
-		props: ['CardArray'],
+		props: {
+			CardArray: {
+				type: Array
+			}
+		},
 		methods: {
 			addtoCart(it) {
 				this.$store.commit('inCart', it)

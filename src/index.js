@@ -55,6 +55,42 @@ export default {
             'ecom-vue-components/HomePage/ArticlesSmallTextContent/Component.vue'
         )
         registerVueComponent(
+            'ecom-products-page',
+            require('./Products/Component.vue').default,
+            Vue,
+            'ecom-vue-components/Products/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-breadcrumb',
+            require('./ProductsPage/Breadc/Component.vue').default,
+            Vue,
+            'ecom-vue-components/ProductsPage/Breadc/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-grid',
+            require('./ProductsPage/Grid/Component.vue').default,
+            Vue,
+            'ecom-vue-components/ProductsPage/Grid/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-slider',
+            require('./ProductsPage/Slider/Component.vue').default,
+            Vue,
+            'ecom-vue-components/ProductsPage/Slider/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-card',
+            require('./ProductsPage/Card/Component.vue').default,
+            Vue,
+            'ecom-vue-components/ProductsPage/Card/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-link-dropdown-item',
+            require('./HomePage/NavigationLink/Component.vue').default,
+            Vue,
+            'ecom-vue-components/HomePage/NavigationLink/Component.vue'
+        )
+        registerVueComponent(
             'ecom-newsletter',
             require('./Newsletter/Component.vue').default,
             Vue,

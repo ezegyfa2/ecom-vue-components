@@ -54,10 +54,10 @@
                             br
                             br
                             h5 Price Range
-                            slider(@clicked='valueSlider')
+                            ecom-slider(@clicked='valueSlider')
             .row.col-xl-9.col-lg-9.col-md-12.col-sm-12.col-xs-12.text-center
                 .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12(v-if='this.cards == 0')
                     h4.margins Sorry, we can&apos;t find a product with this features
-                card(:cardarray='slicedCards')
+                    ecom-card(:cardarray='slicedCards')
                     .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12.py-5
                         button.btn.btn-outline-secondary.btn-lg.btn-block(type='button' @click='incCardNumber') More +

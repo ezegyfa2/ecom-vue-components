@@ -1,24 +1,19 @@
 <template lang="pug">
-  	include Template.pug
+    include Template.pug
 </template>
 
 <script>
-	import slider from '../slider.vue'
-	import Card from '../Card/Component.vue'
-
 	export default {
-		components: {
-			slider,
-			Card
-		},
 		props: {
 			dropdown_item_sections: {
+				type: Array
+			},
+			cards: {
 				type: Array
 			}
 		},
 		data() {
 			return {
-				cards: [],
 				showCards: 6,
 				sortButton: 'DEFAULT'
 			}

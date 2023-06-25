@@ -1,15 +1,20 @@
 <template lang="pug">
-  	include Template.pug
+	include Template.pug
 </template>
 
 <script>
-	import Breadc from '@/Components/ProductsPage/Breadc.vue'
-	import Grid from '@/Components/ProductsPage/Grid.vue'
-
 	export default {
-		components: {
-			Breadc,
-			Grid
+		props: {
+			breadcrumb_section: {
+				type: Object
+			},
+			grid_section: {
+				type: Object
+			},
 		}
 	}
 </script>
+
+<style lang="scss" scoped>
+    @import "Style.scss";
+</style>
