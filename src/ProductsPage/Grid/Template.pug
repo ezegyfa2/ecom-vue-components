@@ -15,18 +15,15 @@
         .row.col-6.flex-row-reverse
             .view-button
                 .dropdown
-                    button#MenuLink.btn.btn-light.dropdown-toggle.d-block.d-lg-none.d-xl-none(role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') CATAGORIES
+                    button#MenuLink.btn.btn-light.dropdown-toggle.d-block.d-lg-none.d-xl-none(role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') CATEGORIES
                     .dropdown-menu(aria-labelledby='MenuLink')
-                        a.dropdown-item(@click="sortI('table')") Tables
-                        a.dropdown-item(@click="sortI('lamp')") Lamps
-                        a.dropdown-item(@click="sortI('chair')") Chairs
-                        a.dropdown-item(@click="sortI('sofa')") Sofas
+                        dynamic-component(
+                            v-for='categoriesItemSection in categories_dropdown_item_sections'
+                            v-bind:component_infos='categoriesItemSection'
+                        )
                         .dropdown-divider
                         .pl-3
-                            span.circle.circle-bakcground1(@click="sortI('yellow')")
-                                span.circle.circle-bakcground2(@click="sortI('blue')")
-                                    span.circle.circle-bakcground3(@click="sortI('white')")
-                                        span.circle.circle-bakcground4(@click="sortI('red')")
+                            span.circle(v-for='(color, index) in colors' :class="'circle-background' + (index + 1)" @click="sortI('color.sortI_color')")
                         .dropdown-divider
                         a.dropdown-item(@click='reSet') Reset
         .row.justify-content-center
@@ -36,10 +33,10 @@
                         .search-title
                             h4 Catagories    +
                             br
-                            h6(@click="sortI('table')") Tables
-                            h6(@click="sortI('lamp')") Lamps
-                            h6(@click="sortI('chair')") Chairs
-                            h6(@click="sortI('sofa')") Sofas
+                            dynamic-component.h6(
+                                v-for='categoriesItemSection in categories_item_sections'
+                                v-bind:component_infos='categoriesItemSection'
+                            )
                             br
                             br
                             br
@@ -47,17 +44,17 @@
                             br
                             .co
                                 h5 Color
-                                span.circle.circle-background1(@click="sortI('yellow')")
-                                span.circle.circle-background2(@click="sortI('blue')")
-                                span.circle.circle-background3(@click="sortI('white')")
-                                span.circle.circle-background4(@click="sortI('red')")
+                                span.circle(v-for='(color, index) in colors' :class="'circle-background' + (index + 1)" @click="sortI('color.sortI_color')")
                             br
                             br
                             h5 Price Range
                             ecom-slider(@clicked='valueSlider')
             .row.col-xl-9.col-lg-9.col-md-12.col-sm-12.col-xs-12.text-center
-                .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12(v-if='this.cards == 0')
-                    h4.margins Sorry, we can&apos;t find a product with this features
-                    ecom-card(:cardarray='slicedCards')
-                    .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12.py-5
-                        button.btn.btn-outline-secondary.btn-lg.btn-block(type='button' @click='incCardNumber') More +
+                //- .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12(v-if='this.cards == 0')
+                //-     h4.margins Sorry, we can&apos;t find a product with this features
+                ecom-card(:CardArray='cards')
+                //- dynamic-component(
+                //-     v-bind:component_infos='cards_section'
+                //- )
+                .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12.py-5
+                    button.btn.btn-outline-secondary.btn-lg.btn-block(type='button' @click='incCardNumber') More +

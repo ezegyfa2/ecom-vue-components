@@ -8,14 +8,27 @@
 			dropdown_item_sections: {
 				type: Array
 			},
+			categories_dropdown_item_sections: {
+				type: Array
+			},
+			categories_item_sections: {
+				type: Array
+			},
+			// cards_section: {
+			// 	type: Object
+			// },
 			cards: {
 				type: Array
-			}
-		},
-		data() {
-			return {
-				showCards: 6,
-				sortButton: 'DEFAULT'
+			},
+			colors: {
+				type: Array
+			},
+			showCards: {
+				type: Number
+			},
+			sortButton: {
+				type: String,
+				default: 'DEFAULT'
 			}
 		},
 		created() {
@@ -23,7 +36,7 @@
 		},
 		computed: {
 			it() {
-				return this.$store.state.items
+				return this.cards
 			},
 			slicedCards() {
 				return this.cards.slice(0, this.showCards)

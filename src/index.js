@@ -86,9 +86,15 @@ export default {
         )
         registerVueComponent(
             'ecom-link-dropdown-item',
-            require('./HomePage/NavigationLink/Component.vue').default,
+            require('./HomePage/NavigationLinks/DropdownNavigationLink/Component.vue').default,
             Vue,
-            'ecom-vue-components/HomePage/NavigationLink/Component.vue'
+            'ecom-vue-components/HomePage/NavigationLinks/DropdownNavigationLink/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-link-item',
+            require('./HomePage/NavigationLinks/NavigationLink/Component.vue').default,
+            Vue,
+            'ecom-vue-components/HomePage/NavigationLinks/NavigationLink/Component.vue'
         )
         registerVueComponent(
             'ecom-newsletter',

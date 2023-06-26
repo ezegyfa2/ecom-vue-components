@@ -9,18 +9,18 @@
 }
 
 .btn-light {
-    color: black !important;
-    background: white;
+    color: $body-text-color !important;
+    background: $second-bg-color;
     border-radius: 0 !important;
-    border: 1px solid grey !important;
+    border: 1px solid $border-light-color !important;
 }
 .dropdown-menu {
-    background-color: #eee;
+    background-color: $dropdown-menu-bg-color;
     color: $newsletter-color;
 }
 
 .dropdown-menu > a:hover {
-    background-color: #dae0e5;
+    background-color: $dropdown-menu-hover-bg-color;
 }
 
 .btn-outline-secondary {
@@ -30,7 +30,7 @@
 /*search options*/
 
 .card-selector {
-    color: #dcdcdc;
+    color: $menu-border-color;
     height: 40rem;
     background: $newsletter-color !important;
     box-shadow: $card-box-shadow,
@@ -45,30 +45,31 @@
     height: 17px;
     width: 17px;
     border-radius: 50%;
-    border: 0.7px solid #2c3539;
+    border: 0.7px solid $newsletter-color;
     display: inline-block;
     margin-left: 6px;
     cursor: pointer;
 }
 
 .circle-background1 {
-    background-color:yellow;
+    background-color: $basic-color1;
 }
 
 .circle-background2 {
-    background-color:blue;
+    background-color: $basic-color2;
 }
 
 .circle-background3 {
-    background-color:white;
+    background-color: $basic-color3;
 }
 
 .circle-background4 {
-    background-color:red
+    background-color: $basic-color4
 }
 
 .span-color {
-    color:#f2be00;
+    color: $breadcrumb-li--item-color;
+    margin-left: 5px;
 }
 
 .margins {
