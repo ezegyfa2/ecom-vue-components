@@ -1,1 +1,2 @@
-a.nav-link(v-bind:href='url' v-on:click='click_function') {{ content }}
+a(v-if='url' v-bind:href='url') {{ content }}
+.nourl(v-else v-on:click='click_function') {{ content }}

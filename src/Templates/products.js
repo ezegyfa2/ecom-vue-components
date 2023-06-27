@@ -4,7 +4,32 @@ export default {
         breadcrumb_section: {
             type: 'ecom-breadcrumb',
             data: {
-                breadcrumb_item_sections: []
+                breadcrumb_item_sections: [
+                    {
+                        type: 'ecom-breadcrumb-link',
+                        data: {
+                            link_section: {
+                                type: 'ecom-link-item',
+                                data: {
+                                    url: '/',
+                                    content: 'Home',
+                                }
+                            }
+                        }
+                    },
+                    {
+                        type: 'ecom-breadcrumb-link',
+                        data: {
+                            link_section: {
+                                type: 'ecom-link-item',
+                                data: {
+                                    url: '',
+                                    content: 'Products',
+                                }
+                            }
+                        }
+                    },
+                ]
             }
         },
         grid_section: {

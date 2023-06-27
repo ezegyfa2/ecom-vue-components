@@ -1,6 +1,9 @@
 @import '../../../globals.scss';
 
-.nav-link {
+a {
     padding: 0;
-    color: $menu-border-color
+}
+
+.nourl {
+    display: inline-block;
 }

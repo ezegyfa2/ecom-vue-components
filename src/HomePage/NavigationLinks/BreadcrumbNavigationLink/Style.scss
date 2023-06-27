@@ -1,0 +1,11 @@
+@import '../../../globals.scss';
+
+.breadcrumb-item > a {
+    text-decoration: none !important;
+    color: $newsletter-color !important;
+}
+
+.breadcrumb-item {
+    text-decoration: none !important;
+    color: $breadcrumb-li--item-color !important;
+}

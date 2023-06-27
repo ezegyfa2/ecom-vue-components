@@ -67,6 +67,12 @@ export default {
             'ecom-vue-components/ProductsPage/Breadc/Component.vue'
         )
         registerVueComponent(
+            'ecom-breadcrumb-link',
+            require('./HomePage/NavigationLinks/BreadcrumbNavigationLink/Component.vue').default,
+            Vue,
+            'ecom-vue-components/HomePage/NavigationLinks/BreadcrumbNavigationLink/Component.vue'
+        )
+        registerVueComponent(
             'ecom-grid',
             require('./ProductsPage/Grid/Component.vue').default,
             Vue,

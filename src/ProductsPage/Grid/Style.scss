@@ -37,7 +37,12 @@
         0 26px 70px 0 rgba(0, 0, 0, 0.69);
 }
 
-.search-title h6 {
+.search-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-title .h6 {
     cursor: pointer;
 }
 
