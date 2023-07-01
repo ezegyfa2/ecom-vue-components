@@ -1,14 +1,5 @@
 @import '../../globals.scss';
 
-.carousel {
-    display: flex;
-    justify-content: center;
-}
-
-.img-fluid {
-    min-width: 800px !important;
-}
-
 ol.carousel-indicators li {
     background-color: white;
     height: 20px;

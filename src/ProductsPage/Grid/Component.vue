@@ -31,6 +31,11 @@
 				default: 'DEFAULT'
 			}
 		},
+		data() {
+			return {
+				
+			}
+		},
 		created() {
 			this.cards = this.it
 		},
