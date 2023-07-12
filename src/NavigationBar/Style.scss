@@ -1,8 +1,9 @@
 @import '../globals.scss';
 
 nav {
+    @extend .font-style;
+
     z-index: 100;
-    font-family: $body-font-family;
     font-weight: 400;
 }
 

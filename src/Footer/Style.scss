@@ -8,6 +8,8 @@
 }
 
 .footer-widget {
+    @extend .font-style;
+
     padding-top: 60px;
 }
 

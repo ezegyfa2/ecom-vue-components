@@ -14,10 +14,7 @@
 			categories_item_sections: {
 				type: Array
 			},
-			// cards_section: {
-			// 	type: Object
-			// },
-			cards: {
+			card_sections: {
 				type: Array
 			},
 			colors: {

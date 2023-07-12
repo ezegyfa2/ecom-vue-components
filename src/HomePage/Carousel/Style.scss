@@ -1,5 +1,9 @@
 @import '../../globals.scss';
 
+#carouselIndicators {
+    @extend .font-style;
+}
+
 ol.carousel-indicators li {
     background-color: white;
     height: 20px;
