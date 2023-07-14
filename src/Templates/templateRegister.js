@@ -7,7 +7,7 @@ export default {
         window.templates.ecom_products_page = require('./products.js').default
 
         window.templates.ecom_about_us = require('./aboutUs.js').default
-        window.templates.ecom_newsletter = require('./newsletter.js').default
+        window.templates.ecom_newsletter = require('./Layout/newsletter.js').default
         
         window.templates.ecom_layout = require('./Layout/layout.js').default
         window.templates.ecom_navigation_bar = require('./Layout/navigationBar.js').default

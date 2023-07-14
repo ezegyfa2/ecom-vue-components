@@ -1,5 +1,5 @@
 export default {
-    type: 'center-content',
+    type: 'section-container',
     data: {
         content_sections: [
             {
