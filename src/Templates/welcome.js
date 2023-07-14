@@ -28,6 +28,16 @@ export default {
                             alt: 'Third slide'
                         },
                     ],
+                    carousel_buttons: [
+                        {
+                            dataSlideTitle: 'prev',
+                            title: 'Previous',
+                        },
+                        {
+                            dataSlideTitle: 'next',
+                            title: 'Next',
+                        },
+                    ]
                 }
             },
             {

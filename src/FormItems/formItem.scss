@@ -24,6 +24,7 @@
     outline: none;
     border-bottom: 2px solid $newsletter-color;
     padding: 0 30px;
+    box-shadow: none;
 }
 
 .form-group input:valid ~ label,

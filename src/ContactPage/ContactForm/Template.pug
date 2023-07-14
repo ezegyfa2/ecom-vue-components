@@ -2,7 +2,7 @@ section
     .container-fluid.py-5
         .row.d-flex
             .col-12.col-xl-6.col-lg-6.col-md-6.col-sm-12.order-sm-0.order-12.margin-right
-                img.img-fluid(src='img_url')
+                img.img-fluid(v-bind:src='img_url')
             .col-12.col-xl-6.col-lg-5.col-md-6.col-sm-12.order-first.order-xl-0
                 h1 {{ title }}
                 h2.text-color {{ sub_title }}

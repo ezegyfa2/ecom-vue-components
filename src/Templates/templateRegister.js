@@ -7,6 +7,8 @@ export default {
         window.templates.ecom_navigation_bar = require('./navigationBar.js').default
         window.templates.ecom_about_us = require('./aboutUs.js').default
         window.templates.ecom_products_page = require('./products.js').default
+        window.templates.ecom_contact_page = require('../Contact/contact.js').default
+        window.templates.ecom_info_page = require('./info.js').default
         window.templates.ecom_footer = require('./footer.js').default
     }
 }

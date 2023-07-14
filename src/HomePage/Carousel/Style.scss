@@ -15,3 +15,7 @@ ol.carousel-indicators li {
 ol.carousel-indicators li.active {
     background: $ol-background-color;
 }
+
+.carousel-control-prev, .carousel-control-next {
+    color: $body-text-color;
+}

@@ -73,6 +73,12 @@ export default {
             'ecom-vue-components/HomePage/NavigationLinks/BreadcrumbNavigationLink/Component.vue'
         )
         registerVueComponent(
+            'ecom-info-page',
+            require('./Info/Component.vue').default,
+            Vue,
+            'ecom-vue-components/Info/Component.vue'
+        )
+        registerVueComponent(
             'ecom-grid',
             require('./ProductsPage/Grid/Component.vue').default,
             Vue,
@@ -101,6 +107,12 @@ export default {
             require('./HomePage/NavigationLinks/NavigationLink/Component.vue').default,
             Vue,
             'ecom-vue-components/HomePage/NavigationLinks/NavigationLink/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-contact-form',
+            require('./ContactPage/ContactForm/Component.vue').default,
+            Vue,
+            'ecom-vue-components/ContactPage/ContactForm/Component.vue'
         )
         registerVueComponent(
             'ecom-newsletter',

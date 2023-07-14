@@ -13,18 +13,21 @@ export default {
                 type: 'ecom-icon-link-with-right-text',
                 data: {
                     content: 'home',
+                    url: '/'
                 }
             },
             {
                 type: 'ecom-icon-link-with-right-text',
                 data: {
                     content: 'products',
+                    url: '/products'
                 }
             },
             {
                 type: 'ecom-icon-link-with-right-text',
                 data: {
                     content: 'contact us',
+                    url: '/contact'
                 }
             }
         ],

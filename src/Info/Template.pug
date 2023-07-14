@@ -1,8 +1,17 @@
 .container.py-5.padding-top
-    infobreadcrumb(:information='information')
-    infobox(:information='information')
-    infotext
-        .related-item
-            hr
-            h6.pb-4 RELATED PRODUCTS
-            card(:cardarray='sliceRelatedItems')
+    //- dynamic-component(
+    //-     v-bind:component_infos='breadcrumb_section'
+    //- )
+    //- dynamic-component(
+    //-     v-bind:component_infos='grid_section'
+    //- )
+    //- dynamic-component(
+    //-     v-bind:component_infos='grid_section'
+    //- )
+    //- infobreadcrumb(:information='information')
+    //- infobox(:information='information')
+    //- infotext
+    //-     .related-item
+    //-         hr
+    //-         h6.pb-4 RELATED PRODUCTS
+    //-         card(:cardarray='sliceRelatedItems')

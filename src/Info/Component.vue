@@ -1,20 +1,14 @@
 <template lang="pug">
-  	include Template.pug
+    include Template.pug
 </template>
 
 <script>
-	import InfoBreadcrumb from '@/Components/InfoPage/InfoBreadcrumb.vue'
-	import InfoBox from '@/Components/InfoPage/InfoBox.vue'
-	import InfoText from '@/Components/InfoPage/InfoText.vue'
-	import Card from '@/Components/ProductsPage/Card.vue'
+	// import InfoBreadcrumb from '@/Components/InfoPage/InfoBreadcrumb.vue'
+	// import InfoBox from '@/Components/InfoPage/InfoBox.vue'
+	// import InfoText from '@/Components/InfoPage/InfoText.vue'
+	// import Card from '@/Components/ProductsPage/Card.vue'
 
 	export default {
-		components: {
-			InfoBreadcrumb,
-			InfoBox,
-			InfoText,
-			Card
-		},
 		data() {
 			return {
 				information: [],
