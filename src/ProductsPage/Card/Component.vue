@@ -5,8 +5,23 @@
 <script>
 	export default {
 		props: {
-			CardArray: {
-				type: Array
+			id: {
+				type: Number
+			},
+			img: {
+				type: String
+			},
+			title: {
+				type: String
+			},
+			price: {
+				type: Number
+			},
+			color: {
+				type: String
+			},
+			type: {
+				type: String
 			}
 		},
 		methods: {

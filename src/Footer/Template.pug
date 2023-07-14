@@ -4,7 +4,7 @@ footer.footer_area
             .col-3.col-xl-2.col-lg-3.col-md-3.col-sm-3
                 .footer-widget
                     dynamic-component(
-                        v-for='thingSection in cartContent' v-bind:key='thing.id'
+                        v-for='thingSection in cartContent' v-bind:key='thingSection.id'
                         v-bind:component_infos='thingSection'
                     )
                     // column1_sections 

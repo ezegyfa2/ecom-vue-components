@@ -1,6 +1,8 @@
 @import '../globals.scss';
 
 .newsletter-area {
+    @extend .font-style;
+
     position: relative;
     z-index: 1;
     background-color: $ol-background-color;

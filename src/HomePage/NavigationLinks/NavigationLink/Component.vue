@@ -9,11 +9,6 @@
         mixins: [
             NavigationLink,
         ],
-        props: {
-            click_function: {
-                type: String
-            },
-        }
     }
 </script>
 

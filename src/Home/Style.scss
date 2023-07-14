@@ -1,8 +1,8 @@
 @import "../globals.scss";
 
 .wrapper {
-    background-color: $body-bg-color !important;
-    font-family: $body-font-family !important;
+    background-color: $body-bg-color;
+    font-family: $body-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $body-text-color;
