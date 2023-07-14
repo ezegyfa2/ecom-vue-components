@@ -1,5 +1,5 @@
 export default {
-    type: 'ecom-about-us',
+    type: 'section-container',
     data: {
         content_sections: [
             {

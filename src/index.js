@@ -37,12 +37,6 @@ export default {
             'ecom-vue-components/HomePage/Carousel/Component.vue'
         )
         registerVueComponent(
-            'ecom-about-us',
-            require('./HomePage/AboutUs/Component.vue').default,
-            Vue,
-            'ecom-vue-components/HomePage/AboutUs/Component.vue'
-        )
-        registerVueComponent(
             'ecom-about-us-content',
             require('./HomePage/Content/Component.vue').default,
             Vue,
