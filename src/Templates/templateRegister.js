@@ -4,7 +4,8 @@ export default {
             window.templates = {}
         }
         window.templates.ecom_welcome = require('./welcome.js').default
-        window.templates.ecom_products_page = require('./products.js').default
+        window.templates.ecom_products = require('./products.js').default
+        window.templates.ecom_login = require('./login.js').default
 
         window.templates.ecom_about_us = require('./aboutUs.js').default
         window.templates.ecom_newsletter = require('./Layout/newsletter.js').default
