@@ -36,6 +36,7 @@ export default {
             type: 'ecom-icon-link-with-right-text',
             data: {
                 content: 'sign in',
+                url: '/login'
             }
         },
         shop_cart_item_section: {
