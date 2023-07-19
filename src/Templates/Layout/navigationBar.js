@@ -19,6 +19,7 @@ export default {
                 type: 'ecom-icon-link-with-right-text',
                 data: {
                     content: 'products',
+                    url: '/products'
                 }
             },
             {

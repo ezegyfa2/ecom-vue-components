@@ -3,7 +3,12 @@
 </template>
 
 <script>
+	import ServerData from '../../../../helper-vue-components/src/ServerData.vue'
+
 	export default {
+		mixins: [
+			ServerData,
+		],
 		props: {
 			dropdown_item_sections: {
 				type: Array
@@ -14,8 +19,11 @@
 			categories_item_sections: {
 				type: Array
 			},
-			card_sections: {
-				type: Array
+			cards: {
+				type: Array,
+				default() {
+					return []
+				}
 			},
 			colors: {
 				type: Array
@@ -30,21 +38,50 @@
 		},
 		data() {
 			return {
-				
+				cardSectionType: 'ecom-card'
 			}
 		},
-		created() {
-			this.cards = this.it
+		mounted() {
+            if (!this.card_sections || this.card_sections.length == 0) {
+                this.refreshDataWithAjax()
+            }
 		},
 		computed: {
-			it() {
-				return this.cards
-			},
+            refreshEnabled() {
+                return this.refreshDataEnabled
+            },
 			slicedCards() {
 				return this.cards.slice(0, this.showCards)
+			},
+            refreshInputData() {
+                return {
+                    '_token': getCsrfToken()
+                }
+            },
+			cardSections() {
+				return this.cards.map(card => {
+					return {
+						type: this.cardSectionType,
+						data: card
+					}
+				})
 			}
 		},
 		methods: {
+            processResponse(data) {
+                this.cards = data
+                /*this.column_names = data.column_names
+                this.total_row_count = data.total_row_count
+                data.filter_sections.forEach(filterSection => {
+                    let filterSectionValue = this.getFilterSectionValue(filterSection.data.name)
+                    if (filterSectionValue) {
+                        filterSection.data.value = filterSectionValue
+                    }
+                })
+                this.filter_sections = data.filter_sections
+                /*this.$emit('update:rows', data.rows)
+                this.$emit('update:filter_sections', data.filter_sections)*/
+            },
 			incCardNumber() {
 				return this.showCards += 6
 			},

@@ -8,8 +8,8 @@
 			id: {
 				type: Number
 			},
-			img: {
-				type: String
+			image: {
+				type: Object
 			},
 			title: {
 				type: String

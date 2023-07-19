@@ -1,6 +1,6 @@
 {
     "name": "ecom-vue-components",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "",
     "main": "src/index.js",
     "scripts": {
@@ -17,6 +17,7 @@
     },
     "homepage": "https://github.com/ezegyfa2/ecom-vue-components#readme",
     "dependencies": {
-        "helper-vue-components": "*"
+        "helper-vue-components": "*",
+        "vue-slider-component": "^2.8.0"
     }
 }

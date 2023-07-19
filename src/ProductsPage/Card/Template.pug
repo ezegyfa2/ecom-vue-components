@@ -1,6 +1,6 @@
 .col-6.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-xs-4.pb-3
     .card
-        img.card-img-top(:src='img' alt='Card image cap')
+        img.card-img-top(:src='imgage.url' :alt='image.alt')
         .overlay
             button.btn.btn-outline-secondary.btn-lg(type='button' @click='addtoCart(id)') Add +
             a.btn.btn-outline-secondary.btn-lg(href='/Info' type='button' @click='sendInfo(id)') Info

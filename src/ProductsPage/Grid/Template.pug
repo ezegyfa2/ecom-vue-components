@@ -50,13 +50,13 @@
                             h5 Price Range
                             ecom-slider(@clicked='valueSlider')
             .row.col-xl-9.col-lg-9.col-md-12.col-sm-12.col-xs-12.text-center
-                .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12(v-if='this.card_sections == 0')
+                .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12(v-if='this.cards == 0')
                     h4.margins Sorry, we can&apos;t find a product with this features
-                //- card_section.id not working as a key
+                //- cardSection.id not working as a key
                 transition-group.row(name='fade' tag='div')
                     dynamic-component(
-                        v-for='(card_section, index) in card_sections' v-bind:key='index'
-                        v-bind:component_infos='card_section'
+                        v-for='(cardSection, index) in cardSections' v-bind:key='index'
+                        v-bind:component_infos='cardSection'
                     )
                 .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12.py-5
                     button.btn.btn-outline-secondary.btn-lg.btn-block(type='button' @click='incCardNumber') More +
