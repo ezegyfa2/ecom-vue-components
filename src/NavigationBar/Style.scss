@@ -13,6 +13,10 @@ nav {
     height: 67px;
 }
 
+.dropdown-toggle {
+    cursor: pointer;
+}
+
 .close {
     position: relative;
     bottom: 20px;
@@ -43,8 +47,8 @@ nav {
 
 .search {
     outline: none;
-    border: 1px #f8f8f8;
-    background: #ededed url("../assets/search.png") no-repeat 5px center;
+    border: 1px $body-bg-color;
+    background: $dropdown-menu-bg-color url("../assets/search.png") no-repeat 5px center;
     padding: 5px 8px 0px 26px;
     width: 10px;
     -webkit-border-radius: 10em;
@@ -58,9 +62,9 @@ nav {
 
 .search:focus {
     width: 160px;
-    border: solid 1px #ccc;
-    background-color: #fff;
-    border-color: #98ccfd;
+    border: solid 1px $menu-border-color;
+    background-color: $second-bg-color;
+    border-color: $form-group-color;
     -webkit-box-shadow: $box-shadow;
     -moz-box-shadow: $box-shadow;
     box-shadow: $box-shadow;
@@ -82,9 +86,9 @@ form .btn-xl.btn-success.mt-3 {
 }
 
 .bag span {
-    background-color: #6394f8;
+    background-color: $form-group-color;
     border-radius: 10px;
-    color: white;
+    color: $second-bg-color;
     position: absolute;
     font-size: 15px;
     line-height: 1;
@@ -101,6 +105,7 @@ form .btn-xl.btn-success.mt-3 {
         margin-right: 20px;
         font-size: 1.25rem;
         color: $body-text-color;
+        text-decoration: none;
         cursor: pointer;
 
         &:hover, &:active {
@@ -108,4 +113,3 @@ form .btn-xl.btn-success.mt-3 {
         }
     }
 }
-

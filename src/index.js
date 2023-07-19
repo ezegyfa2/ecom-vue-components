@@ -13,6 +13,12 @@ export default {
             'ecom-vue-components/Home/Component.vue'
         )
         registerVueComponent(
+            'ecom-login',
+            require('./Login/Component.vue').default,
+            Vue,
+            'ecom-vue-components/Login/Component.vue'
+        )
+        registerVueComponent(
             'ecom-navigation-bar',
             require('./NavigationBar/Component.vue').default,
             Vue,
