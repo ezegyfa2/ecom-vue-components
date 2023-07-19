@@ -5,7 +5,8 @@ export default {
             type: 'icon-link-with-right-text',
             data: {
                 content: 'ECOM',
-                icon_class: 'fa-solid fa-droplet'
+                icon_class: 'fa-solid fa-droplet',
+                url: '/'
             },
         },
         left_item_sections: [
@@ -13,18 +14,21 @@ export default {
                 type: 'ecom-icon-link-with-right-text',
                 data: {
                     content: 'home',
+                    url: '/'
                 }
             },
             {
                 type: 'ecom-icon-link-with-right-text',
                 data: {
                     content: 'products',
+                    url: '/products'
                 }
             },
             {
                 type: 'ecom-icon-link-with-right-text',
                 data: {
                     content: 'contact us',
+                    url: '/contact'
                 }
             }
         ],

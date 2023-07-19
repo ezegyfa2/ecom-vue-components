@@ -1,25 +1,28 @@
 .container-flex
-    nav.navbar.navbar-light
-        .dropdown.d-xl-none.d-lg-none.mr-auto
-            i(class='fa-solid fa-bars' data-toggle='dropdown' data-target='#navd' aria-haspopup='true' aria-expanded='false')
-            .dropdown-menu.hb(aria-labelledby='navd')
+    nav.navbar.navbar-expand-lg.navbar-light
+        .container-fluid
+            .dropdown.d-xl-none.d-lg-none.me-auto
+                i(class='fa-solid fa-bars' data-toggle='dropdown' data-target='#navd' aria-haspopup='true' aria-expanded='false')
+                .dropdown-menu.hb(aria-labelledby='navd')
+                    dynamic-component(
+                        v-for='leftItemSection in left_item_sections'
+                        v-bind:component_infos='leftItemSection'
+                    )
+            dynamic-component.navbar-brand.py-0.ps-5(
+                v-bind:component_infos='title_section'
+            )
+            span.navbar-item.bc.py-0
                 dynamic-component(
                     v-for='leftItemSection in left_item_sections'
                     v-bind:component_infos='leftItemSection'
                 )
-        dynamic-component.navbar-brand.py-0.pl-5(
-            v-bind:component_infos='title_section'
-        )
-        span.navbar-item.bc.py-0
-            dynamic-component(
-                v-for='leftItemSection in left_item_sections'
-                v-bind:component_infos='leftItemSection'
-            )
-        .navbar-item.user.ml-auto
-            dynamic-component(
-                v-bind:component_infos='right_item_section'
-            )
-        .ms-4
+            p.navbar-item.ms-auto
+            .d-none.d-xl-block.d-lg-block.pe-3
+                input.search(type="search")
+            .navbar-item.user
+                dynamic-component(
+                    v-bind:component_infos='right_item_section'
+                )
             dynamic-component(
                 v-bind:component_infos='shop_cart_item_section'
             )
