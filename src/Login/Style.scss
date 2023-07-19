@@ -1,0 +1,41 @@
+@import '../globals.scss';
+
+.container {
+    width: 450px;
+    margin: 54px auto;
+    @extend .font-style;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    z-index: 10;
+    height: 50px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 0px 30px;
+    background-color: $newsletter-color;
+    
+    &:hover, &:active, &:focus {
+        color: $body-text-color;
+        background-color: $ol-background-color;
+    }
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
