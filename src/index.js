@@ -19,6 +19,12 @@ export default {
             'ecom-vue-components/Login/Component.vue'
         )
         registerVueComponent(
+            'ecom-formitem-with-label',
+            require('./FormItems/FormItemWithLabel/Component.vue').default,
+            Vue,
+            'ecom-vue-components/FormItems/FormItemWithLabel/Component.vue'
+        )
+        registerVueComponent(
             'ecom-navigation-bar',
             require('./NavigationBar/Component.vue').default,
             Vue,

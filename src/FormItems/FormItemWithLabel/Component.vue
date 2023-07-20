@@ -5,8 +5,17 @@
 <script>
 export default {
 	props: {
-		formitem_sections: {
-			type: Array
+		label: {
+			type: String
+		},
+		itemId: {
+			type: String
+		},
+		itemType: {
+			type: String
+		},
+		placeholder: {
+			type: String
 		}
 	}
 }
