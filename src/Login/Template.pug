@@ -1,10 +1,9 @@
 .container
     h2 Login
     form
-        dynamic-component.mb-3(
+        dynamic-component(
             v-for='formItemSection in formitem_sections'
             v-bind:component_infos='formItemSection'
-            v-bind:class="{ 'form-check': formItemSection.itemType='checkbox' }"
             )
         .d-flex.justify-content-end
             button.btn.btn-primary(type='submit') Submit

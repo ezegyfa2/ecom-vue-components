@@ -25,6 +25,12 @@ export default {
             'ecom-vue-components/FormItems/FormItemWithLabel/Component.vue'
         )
         registerVueComponent(
+            'ecom-checkbox-with-label',
+            require('./FormItems/CheckBoxWithLabel/Component.vue').default,
+            Vue,
+            'ecom-vue-components/FormItems/CheckBoxWithLabel/Component.vue'
+        )
+        registerVueComponent(
             'ecom-navigation-bar',
             require('./NavigationBar/Component.vue').default,
             Vue,

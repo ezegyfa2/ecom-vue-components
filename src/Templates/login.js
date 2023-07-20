@@ -25,7 +25,7 @@ export default {
                             }
                         },
                         {
-                            type: 'ecom-formitem-with-label',
+                            type: 'ecom-checkbox-with-label',
                             data: {
                                 label: 'Remember me',
                                 itemId: 'Check1',
