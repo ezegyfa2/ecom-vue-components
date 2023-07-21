@@ -9,6 +9,15 @@ export default {
                         {
                             type: 'ecom-formitem-with-label',
                             data: {
+                                label: 'Username',
+                                itemId: 'UserName1',
+                                itemType: 'username',
+                                placeholder: 'Username'
+                            }
+                        },
+                        {
+                            type: 'ecom-formitem-with-label',
+                            data: {
                                 label: 'Email address',
                                 itemId: 'InputEmail1',
                                 itemType: 'email',
@@ -18,25 +27,26 @@ export default {
                         {
                             type: 'ecom-formitem-with-label',
                             data: {
-                                label: 'Password',
+                                label: 'New Password',
                                 itemId: 'InputPassword1',
                                 itemType: 'password',
                                 placeholder: 'example password'
                             }
                         },
                         {
-                            type: 'ecom-checkbox-with-label',
+                            type: 'ecom-formitem-with-label',
                             data: {
-                                label: 'Remember me',
-                                itemId: 'Check1',
-                                itemType: 'checkbox'
+                                label: 'Confirm Password',
+                                itemId: 'ConfirmPassword1',
+                                itemType: 'password',
+                                placeholder: 'example password'
                             }
-                        },
+                        }
                     ],
-                    title: 'Login',
-                    linkTitle: 'Registration',
-                    url: '/registration',
-                    text: 'Not a member?'
+                    title: 'Registration',
+                    linkTitle: 'Login',
+                    url: '/login',
+                    text: 'I have account:'
                 }
             }
         ]

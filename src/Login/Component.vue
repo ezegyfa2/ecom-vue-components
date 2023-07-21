@@ -7,6 +7,18 @@ export default {
 	props: {
 		formitem_sections: {
 			type: Array
+		},
+		title: {
+			type: String
+		},
+		linkTitle: {
+			type: String
+		},
+		url: {
+			type: String
+		},
+		text: {
+			type: String
 		}
 	}
 }

@@ -1,5 +1,5 @@
 .container
-    h2 Login
+    h2 {{ title }}
     form
         dynamic-component(
             v-for='formItemSection in formitem_sections'
@@ -7,3 +7,6 @@
             )
         .d-flex.justify-content-end
             button.btn.btn-primary(type='submit') Submit
+    .text-center.mt-3
+        p {{ text }} 
+            a(v-bind:href='url') {{ linkTitle }}

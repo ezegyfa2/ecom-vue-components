@@ -14,6 +14,9 @@ export default {
 		itemType: {
 			type: String
 		},
+		itemName: {
+			type: String
+		}
 	}
 }
 </script>
