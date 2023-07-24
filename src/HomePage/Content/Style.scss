@@ -1,6 +1,10 @@
 @import "../../globals.scss";
 
-.about-us img {
+.row {
+    @extend .font-style;
+}
+
+img {
     width: 90%;
     min-width: 380px;
 }
