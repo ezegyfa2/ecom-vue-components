@@ -133,6 +133,12 @@ export default {
             'dynamic-web-vue-components/FormItems/Inputs/Email/Component.vue'
         )
         registerVueComponent(
+            'ecom-contact-page',
+            require('./ContactPage/ContactForm/Component.vue').default,
+            Vue,
+            'dynamic-web-vue-components/ContactPage/ContactForm/Component.vue'
+        )
+        registerVueComponent(
             'ecom-footer',
             require('./Footer/Component.vue').default,
             Vue,

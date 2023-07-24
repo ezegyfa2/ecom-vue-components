@@ -2,24 +2,10 @@ section
     .container-fluid.py-5
         .row.d-flex
             .col-12.col-xl-6.col-lg-6.col-md-6.col-sm-12.order-sm-0.order-12.margin-right
-                img.img-fluid(src='img_url')
+                img.img-fluid(v-bind:src='image_url' v-bind:alt='image_alt')
             .col-12.col-xl-6.col-lg-5.col-md-6.col-sm-12.order-first.order-xl-0
                 h1 {{ title }}
                 h2.text-color {{ sub_title }}
-                form(
-                    v-bind:action='url'
-                    v-bind:method='method'
-                    v-on:submit='submitForm'
+                dynamic-component.form(
+                    v-bind:component_infos='form_section'
                 )
-                    csrf-input
-                    component(
-                        v-for='formItemSection in form_item_sections'
-                        v-bind:key='formItemSection.data.name'
-                        v-bind:ref='formItemSection.data.name'
-                        v-bind:is='getConvertedType(formItemSection.type)'
-                        v-bind='formItemSection.data'
-                        v-bind:value='formItemSection.data.value'
-                        v-on:update:value='(newValue) => { formItemSection.data.value = newValue }'
-                    )
-                    .form-item
-                        button.btn.btn-primary.form-item-control.text-align-center(type='submit' @click='submitForm') {{ button_title }}

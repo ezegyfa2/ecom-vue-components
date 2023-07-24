@@ -3,12 +3,7 @@
 </template>
 
 <script>
-    import Form from '../../../../helper-vue-components/src/Form/Form/Component.vue'
-
     export default {
-        mixins: [
-            Form,
-        ],
         props: {
             title: {
                 type: String,
@@ -18,8 +13,14 @@
                 type: String,
                 default: 'got a thought to discuss?'
             },
-            img_url: {
+            image_url: {
                 type: String,
+            },
+            image_alt: {
+                type: String,
+            },
+            form_section: {
+                type: Object,
             }
         }
     }
