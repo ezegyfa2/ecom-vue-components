@@ -7,31 +7,27 @@
     z-index: 1;
     background-color: $ol-background-color;
     padding: 75px;
+
+    .newsletter-form form {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .newsletter-area .newsletter-text {
     position: relative;
     z-index: 1;
-}
 
-.newsletter-area .newsletter-text h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: $newsletter-color;
-}
+    h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: $newsletter-color;
+    }
 
-.newsletter-area .newsletter-text h2 {
-    color: $newsletter-color;
-}
-
-.newsletter-area .newsletter-text p {
-    color: $newsletter-color;
-    margin-bottom: 0;
-}
-
-.newsletter-area .newsletter-form form {
-    position: relative;
-    z-index: 1;
+    p {
+        color: $newsletter-color;
+        margin-bottom: 0;
+    }
 }
 
 .newsletter-area .newsletter-form .input-button {

@@ -1,0 +1,32 @@
+.main-form-item
+    //- minlength, maxlength for textarea type
+    textarea.main-form-input-class(
+        v-if="inputType === 'textarea'"
+        ref='inputElement'
+        v-bind:name='name'
+        v-bind:placeholder='placeholder'
+        v-model='currentValue'
+        v-bind:required='required'
+        v-bind:rows='numberOfRows'
+        v-bind:minlength='minlength'
+        v-bind:maxlength='maxlength'
+        v-bind:class='invalidClass'
+        v-bind:id='formItemId'
+    )
+    //- minlength, maxlength for text type, min, max for number and datetime types
+    input.main-form-input-class.input-height(
+        v-else
+        ref='inputElement'
+        v-bind:name='name'
+        v-bind:placeholder='placeholder'
+        v-model='currentValue'
+        v-bind:required='required'
+        v-bind:type='inputType'
+        v-bind:minlength='minlength'
+        v-bind:maxlength='maxlength'
+        v-bind:min='min'
+        v-bind:max='max'
+        v-bind:class='invalidClass'
+        v-bind:id='formItemId'
+    )
+    label.main-form-label-class(v-bind:for='formItemId') {{ label }}

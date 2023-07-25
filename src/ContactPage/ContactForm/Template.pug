@@ -6,6 +6,11 @@ section
             .col-12.col-xl-6.col-lg-5.col-md-6.col-sm-12.order-first.order-xl-0
                 h1 {{ title }}
                 h2.text-color {{ sub_title }}
-                dynamic-component.form(
-                    v-bind:component_infos='form_section'
-                )
+                form.form(v-bind:action='url' v-bind:method='method' v-on:submit='submitForm')
+                    dynamic-component(
+                        v-for='formItemSection in form_item_sections'
+                        v-bind:component_infos='formItemSection'
+                    )
+                    dynamic-component.btn.btn-light(
+                        v-bind:component_infos='button_section'
+                    )

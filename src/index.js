@@ -127,10 +127,22 @@ export default {
             'dynamic-web-vue-components/HomePage/TextContent/Component.vue'
         )
         registerVueComponent(
+            'ecom-input-field',
+            require('./FormItems/InputField/Component.vue').default,
+            Vue,
+            'dynamic-web-vue-components/FormItems/InputField/Component.vue'
+        )
+        registerVueComponent(
             'ecom-form-input-email',
             require('./FormItems/Inputs/Email/Component.vue').default,
             Vue,
             'dynamic-web-vue-components/FormItems/Inputs/Email/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-form-button',
+            require('./FormItems/Button/Component.vue').default,
+            Vue,
+            'dynamic-web-vue-components/FormItems/Button/Component.vue'
         )
         registerVueComponent(
             'ecom-contact-page',

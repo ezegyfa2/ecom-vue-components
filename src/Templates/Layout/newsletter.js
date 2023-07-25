@@ -15,7 +15,13 @@ export default {
                     placeholder: 'Your E-mail',
                 },
             },
-            button_title: 'Submit'
+            newsletter_button_section: {
+                type: 'ecom-form-button',
+                data: {
+                    content: 'Submit',
+                    is_submit_button: true
+                },
+            },
         }
     }
 }

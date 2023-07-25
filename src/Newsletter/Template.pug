@@ -13,4 +13,6 @@ section.newsletter-area
                         dynamic-component(
                             v-bind:component_infos='newsletter_form.newsletter_input_section'
                         )
-                        button.input-button(@click.prevent='haSubmit') {{ newsletter_form.button_title }}
+                        dynamic-component.input-button(
+                            v-bind:component_infos='newsletter_form.newsletter_button_section'
+                        )

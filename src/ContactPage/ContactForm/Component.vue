@@ -19,8 +19,24 @@
             image_alt: {
                 type: String,
             },
-            form_section: {
+            form_item_sections: {
                 type: Object,
+            },
+            button_section: {
+                type: Object,
+            },
+            url: {
+                type: String
+            },
+            method: {
+                type: String,
+                default: 'post'
+            },
+        },
+        methods: {
+            submitForm (e) {
+                this.submitted = true
+                return true
             }
         }
     }

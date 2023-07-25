@@ -1,0 +1,55 @@
+@import "../../globals.scss";
+@import "bootstrap";
+
+.main-form-item {
+    @extend .font-style;
+
+    width: 100%;
+    position: relative;
+    margin: 0 0 50px;
+
+    .main-form-label-class {
+        font-weight: 100;
+        font-size: 1.5rem;
+        color: $form-group-label;
+        position: absolute;
+        transition: 0.5s ease-in-out;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+    }
+
+    .main-form-input-class {
+        outline: none;
+        box-shadow: none;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid $newsletter-color;
+        font-size: 1.4rem;
+        font-weight: 100;
+        width: 100%;
+        transition: $form-group-transition;
+        z-index: 1;
+        position: relative;
+        border-radius: 0;
+        resize: none;
+        scroll-behavior: none;
+        overflow: hidden;
+        
+        .input-height {
+            height: 40px;
+        }
+        
+        &:valid, &:focus {
+            border-color: $form-group-color;
+            box-shadow: none;
+        }
+
+        &:valid ~ .main-form-label-class, &:focus ~ .main-form-label-class  {
+            color: $form-group-color;
+            font-size: 1rem;
+            top: -15px;
+            transition: $form-group-transition;
+        }
+    }
+}

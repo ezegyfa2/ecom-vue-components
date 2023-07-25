@@ -36,6 +36,7 @@
 .form-group input:valid,
 .form-group input:focus {
     border-color: $newsletter-color;
+    box-shadow: none;
 }
 
 .form-control {
