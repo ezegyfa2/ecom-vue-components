@@ -72,7 +72,7 @@ export default {
             phone_number: '+602-926-5809'
         },
         bottom_left_section: {
-            copy: 'Copyright &copy; All Rights Reserved 2020',
+            copy: 'Copyright @ All Rights Reserved 2020',
         },
         bottom_right_section: {
             title: 'Get social',
