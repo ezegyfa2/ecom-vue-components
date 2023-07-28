@@ -5,17 +5,23 @@
 <script>
 export default {
 	props: {
-		label: {
+		formitem_sections: {
+			type: Array
+		},
+		title: {
 			type: String
 		},
-		item_id: {
+		link_title: {
 			type: String
 		},
-		item_type: {
+		url: {
 			type: String
 		},
-		placeholder: {
+		text: {
 			type: String
+		},
+		button_section: {
+			type: Object
 		}
 	}
 }

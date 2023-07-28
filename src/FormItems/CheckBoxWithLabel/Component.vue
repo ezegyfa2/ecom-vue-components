@@ -8,13 +8,13 @@ export default {
 		label: {
 			type: String
 		},
-		itemId: {
+		item_id: {
 			type: String
 		},
-		itemType: {
+		item_type: {
 			type: String
 		},
-		itemName: {
+		item_name: {
 			type: String
 		}
 	}

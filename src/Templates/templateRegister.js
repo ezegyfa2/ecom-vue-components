@@ -13,7 +13,10 @@ export default {
         window.templates.ecom_info = require('./info.js').default
         
         window.templates.ecom_layout = require('./Layout/layout.js').default
+        window.templates.ecom_layout2 = require('./Layout/layout2.js').default
         window.templates.ecom_navigation_bar = require('./Layout/navigationBar.js').default
+        window.templates.ecom_navigation_bar2 = require('./Layout/navigationBar2.js').default
         window.templates.ecom_footer = require('./Layout/footer.js').default
+        window.templates.ecom_footer2 = require('./Layout/footer2.js').default
     }
 }

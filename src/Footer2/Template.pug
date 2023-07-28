@@ -1,0 +1,7 @@
+footer
+    .container
+        .row.justify-content-center
+                dynamic-component(
+                    v-for='footer_item_section in footer_item_sections'
+                    v-bind:component_infos='footer_item_section'
+                )
