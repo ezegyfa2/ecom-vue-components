@@ -29,4 +29,6 @@ $basic-color4: red;
 
 .font-style {
     font-family: $body-font-family;
+    color: $body-text-color;
+    font-weight: 100;
 }
