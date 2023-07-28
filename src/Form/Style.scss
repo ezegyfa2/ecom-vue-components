@@ -6,13 +6,18 @@
     @extend .font-style;
 }
 
-h2 {
+.title {
     text-align: center;
     margin-bottom: 42px;
 }
 
-input[type=email], input[type=password] {
-    width: 100%;
+
+.main-input-class {
+    margin-bottom: 1rem;
+}
+
+input[type=email], input[type=password], input[type=username] {
+    width: 100%;;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -39,6 +44,10 @@ button {
 .btn:focus, .btn:active {
     outline: none !important;
     box-shadow: none !important;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 425px) {

@@ -1,0 +1,14 @@
+@import '../../globals.scss';
+
+.media-item {
+    text-align: center;
+}
+
+a {
+    color: $newsletter-color;
+    text-decoration: none;
+
+    &:hover, &:active, &:visited {
+        text-decoration: underline;
+    }
+}

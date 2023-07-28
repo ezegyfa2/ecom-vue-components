@@ -1,0 +1,13 @@
+@import '../../globals.scss';
+
+.footer-title {
+    font-size: large;
+    padding: 16px 0px;
+    color: $newsletter-color;
+}
+
+ul.footer-items {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}

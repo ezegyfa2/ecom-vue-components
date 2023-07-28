@@ -5,21 +5,12 @@
 <script>
 export default {
 	props: {
-		formitem_sections: {
-			type: Array
-		},
-		title: {
+		submit_item: {
 			type: String
 		},
-		linkTitle: {
-			type: String
-		},
-		url: {
-			type: String
-		},
-		text: {
-			type: String
-		}
+        submit_label: {
+            type: String
+        }
 	}
 }
 </script>

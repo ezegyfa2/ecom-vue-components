@@ -1,0 +1,13 @@
+@import '../../globals.scss';
+
+.nav-link {
+    z-index: 10;
+    border: none;
+    border-radius: 0;
+    padding: 0px 30px;
+    color: $newsletter-color !important;
+
+    &:hover,&:active,&:focus {
+        border-bottom: 1px solid $newsletter-color;
+    }
+}
