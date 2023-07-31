@@ -18,5 +18,6 @@ export default {
         window.templates.ecom_navigation_bar2 = require('./Layout/navigationBar2.js').default
         window.templates.ecom_footer = require('./Layout/footer.js').default
         window.templates.ecom_footer2 = require('./Layout/footer2.js').default
+        window.templates.ecom_admin = require('./admin.js').default
     }
 }

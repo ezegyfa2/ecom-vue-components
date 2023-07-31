@@ -1,0 +1,63 @@
+@import '../globals.scss';
+
+.container {
+    width: 460px;
+    margin: 54px auto;
+    @extend .font-style;
+}
+
+.d-flex {
+    padding: 0px;
+}
+
+.title {
+    margin: 16px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn {
+    z-index: 10;
+    height: 38px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 0;
+    margin: 16px 0px;
+    background-color: $newsletter-color;
+    
+    &:hover, &:active, &:focus {
+        color: $body-text-color;
+        background-color: $ol-background-color;
+    }
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.table-responsive {
+    margin: 16px 0px;
+    overflow-y: scroll;
+    max-height: 300px;
+    border: 1px solid $form-group-label;
+}
+
+.row {
+    margin: 0px 16px;
+}
+
+.image-link {
+    margin: 0px;
+}
+
+button {
+    border: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+}

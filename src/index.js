@@ -192,5 +192,11 @@ export default {
             Vue,
             'ecom-vue-components/IconLinks/FooterMediaLinks/Component.vue'
         )
+        registerVueComponent(
+            'ecom-admin',
+            require('./Admin/Component.vue').default,
+            Vue,
+            'ecom-vue-components/Admin/Component.vue'
+        )
     },
 }
