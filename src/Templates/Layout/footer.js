@@ -2,69 +2,120 @@ export default {
     type: 'ecom-footer',
     data: {
         cartContent: [],
-        column1_sections: {
-            title: 'Navigate',
-            content: [
-                {
-                    title: 'About Us',
-                    url: '/'
-                },
-                {
-                    title: 'Blog',
-                    url: '/'
-                },
-                {
-                    title: 'Contact Us',
-                    url: '/'
-                },
-                {
-                    title: 'Sitemap',
-                    url: '/'
-                },
-            ]
-        },
-        column2_sections: {
-            title: 'Collection',
-            content: [
-                {
-                    title: 'New arrivals',
-                    url: '/products'
-                },
-                {
-                    title: 'Featured',
-                    url: '/products'
-                },
-                {
-                    title: 'Catalog',
-                    url: '/products'
-                },
-                {
-                    title: 'Brands',
-                    url: '/products'
-                },
-            ]
-        },
-        column3_sections: {
-            title: 'Catagories',
-            content: [
-                {
-                    title: 'Tables',
-                    url: '/products'
-                },
-                {
-                    title: 'Lamps',
-                    url: '/products'
-                },
-                {
-                    title: 'Chairs',
-                    url: '/products'
-                },
-                {
-                    title: 'Sofas',
-                    url: '/products'
-                },
-            ]
-        },
+        column1_sections: [
+            {
+                type: 'ecom-footer-list-elements',
+                data: {
+                    title: 'Navigate',
+                    navigate_sections: [
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/',
+                                navitem_title: 'About Us'
+                            }
+                        },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/',
+                                navitem_title: 'Blog'
+                            }
+                        },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/contact',
+                                navitem_title: 'Contact Us'
+                            }
+                        },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/',
+                                navitem_title: 'Sitemap'
+                            }
+                        },
+                    ]
+                }
+            }
+        ],
+        column2_sections: [
+            {
+                type: 'ecom-footer-list-elements',
+                data: {
+                    title: 'Collection',
+                    navigate_sections: [
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/products',
+                                navitem_title: 'New arrivals'
+                            }
+                        },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/products',
+                                navitem_title: 'Featured'
+                            }
+                        },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/products',
+                                navitem_title: 'Catalog'
+                            }
+                        },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/products',
+                                navitem_title: 'Brands'
+                            }
+                        },
+                    ]
+                }
+            }
+        ],
+        column3_sections: [
+            {
+                type: 'ecom-footer-list-elements',
+                data: {
+                    title: 'Catagories',
+                    navigate_sections: [
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/products',
+                                navitem_title: 'Tables'
+                            }
+                        },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/products',
+                                navitem_title: 'Lamps'
+                            }
+                        },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/products',
+                                navitem_title: 'Chairs'
+                            }
+                        },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/products',
+                                navitem_title: 'Sofas'
+                            }
+                        },
+                    ]
+                }
+            }
+        ],
         right_sections: {
             street: '399 Crowfield Road',
             city: 'Phoenix, Arizona 85012',

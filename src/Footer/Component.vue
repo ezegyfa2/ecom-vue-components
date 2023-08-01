@@ -9,13 +9,13 @@
                 type: Array
             },
             column1_sections: {
-                type: Object
+                type: Array
             },
             column2_sections: {
-                type: Object
+                type: Array
             },
             column3_sections: {
-                type: Object
+                type: Array
             },
             right_sections: {
                 type: Object

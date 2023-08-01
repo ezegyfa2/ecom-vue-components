@@ -4,8 +4,13 @@
     @extend .font-style;
 }
 
-img {
+img, .description-text {
     width: 90%;
-    min-width: 380px;
+}
+
+@media (max-width: 768px) {
+    img, .description-text {
+        width: 100%;
+    }
 }
 

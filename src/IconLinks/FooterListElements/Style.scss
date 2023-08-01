@@ -1,13 +1,18 @@
 @import '../../globals.scss';
 
-.footer-title {
-    font-size: large;
-    padding: 16px 0px;
-    color: $newsletter-color;
+.item {
+    @extend .font-style;
 }
 
-ul.footer-items {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
+.footer-title {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+ul.list-unstyled {
+    text-decoration: none;
+
+    li {
+        margin-bottom: 10px;
+    }
 }
