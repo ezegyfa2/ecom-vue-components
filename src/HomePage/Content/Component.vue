@@ -12,7 +12,7 @@
         computed: {
             textOrientationClass() {
                 //Reversed becouse the left_orientation indicate the image position
-                return this.left_orientation ?  "text-lg-end float-end" : "";
+                return this.left_orientation ?  "text-lg-end" : "";
             }
         }
     }

@@ -8,9 +8,28 @@ img, .description-text {
     width: 90%;
 }
 
+.text-lg-end {
+    float: right;
+}
+
+@media (max-width: 576px) {
+    img {
+        margin-top: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
-    img, .description-text {
+    img {
         width: 100%;
+    }
+
+    .description-text {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .text-lg-end {
+        float: none;
     }
 }
 
