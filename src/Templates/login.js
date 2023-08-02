@@ -7,21 +7,35 @@ export default {
                 data: {
                     formitem_sections: [
                         {
-                            type: 'ecom-formitem-with-label',
+                            type: 'ecom-input-field',
                             data: {
-                                label: 'Email address',
-                                item_id: 'InputEmail1',
-                                item_type: 'email',
-                                placeholder: 'example@gmail.com'
+                                label: 'Email Adress',
+                                inputType: 'email',
+                                name: "name",
+                                value: null,
+                                required: true,
+                                validation_errors: [],
+                                maxlength: 255,
+                                minlength: 0,
+                                max: 0,
+                                min: 0,
+                                form_item_id: 'emailInput'
                             }
                         },
                         {
-                            type: 'ecom-formitem-with-label',
+                            type: 'ecom-input-field',
                             data: {
                                 label: 'Password',
-                                item_id: 'InputPassword1',
-                                item_type: 'password',
-                                placeholder: 'example password'
+                                inputType: 'password',
+                                name: "name",
+                                value: null,
+                                required: true,
+                                validation_errors: [],
+                                maxlength: 255,
+                                minlength: 0,
+                                max: 0,
+                                min: 0,
+                                form_item_id: 'passwordInput'
                             }
                         },
                         {

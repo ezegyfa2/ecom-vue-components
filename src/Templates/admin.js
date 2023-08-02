@@ -11,7 +11,7 @@ export default {
                     button_section: {
                         type: 'ecom-form-button',
                         data: {
-                            content: 'Submit',
+                            content: 'Add',
                             is_submit_button: true
                         }
                     }
