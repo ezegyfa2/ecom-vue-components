@@ -32,3 +32,45 @@ $basic-color4: red;
     color: $body-text-color;
     font-weight: 100;
 }
+
+.dark-button {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    background-color: $newsletter-color;
+    color: $second-bg-color;
+    font-size: 18px;
+    padding: 0px 30px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    
+    &:hover, &:focus {
+        background-color: $ol-background-color;
+        color: $body-text-color;
+    }
+}
+
+.dark-button-with-shadow {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    background-color: $newsletter-color;
+    color: $second-bg-color;
+    font-size: 18px;
+    padding: 0px 30px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    box-shadow: $card-box-shadow,
+    0 16px 70px 0 rgba(0, 0, 0, 0.69);
+    
+    &:hover, &:focus {
+        background-color: $ol-background-color;
+        color: $body-text-color;
+    }
+}
