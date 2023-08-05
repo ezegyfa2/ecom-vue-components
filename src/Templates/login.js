@@ -30,7 +30,7 @@ export default {
                             data: {
                                 label: 'Password',
                                 inputType: 'password',
-                                name: "name",
+                                name: "password",
                                 value: null,
                                 required: true,
                                 validation_errors: [],
