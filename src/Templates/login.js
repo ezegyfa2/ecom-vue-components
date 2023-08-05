@@ -14,7 +14,7 @@ export default {
                             data: {
                                 label: 'Email Adress',
                                 inputType: 'email',
-                                name: "name",
+                                name: "email",
                                 value: null,
                                 required: true,
                                 validation_errors: [],
@@ -45,8 +45,9 @@ export default {
                             type: 'ecom-checkbox-with-label',
                             data: {
                                 label: 'Remember me',
-                                item_id: 'Check1',
-                                item_type: 'checkbox'
+                                name: 'remember_me',
+                                id: 'remember_me',
+                                type: 'checkbox'
                             }
                         },
                     ],
