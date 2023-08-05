@@ -7,6 +7,9 @@ export default {
                 data: {
                     formitem_sections: [
                         {
+                            type: 'csrf-input'
+                        },
+                        {
                             type: 'ecom-input-field',
                             data: {
                                 label: 'Email Adress',
