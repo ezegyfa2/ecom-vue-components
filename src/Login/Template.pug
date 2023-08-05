@@ -1,6 +1,6 @@
 .container
     h2 {{ title }}
-    form
+    form(v-bind:method="method")
         dynamic-component(
             v-for='formItemSection in formitem_sections'
             v-bind:component_infos='formItemSection'

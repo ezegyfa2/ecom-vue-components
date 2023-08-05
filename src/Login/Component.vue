@@ -19,6 +19,10 @@ export default {
 		},
 		text: {
 			type: String
+		},
+		method: {
+			type: String,
+			default: 'POST'
 		}
 	}
 }
