@@ -32,28 +32,27 @@
 
 .newsletter-area .newsletter-form .input-button {
     @extend .height-border;
-
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    background-color: $newsletter-color;
-    color: $second-bg-color;
-    font-size: 18px;
-    padding: 0px 30px;
-    cursor: pointer;
-    position: relative;
-    top: 0;
-    z-index: 10;
-    box-shadow: $card-box-shadow,
-        0 16px 70px 0 rgba(0, 0, 0, 0.69);
+    @extend .dark-button-with-shadow;
 }
 
-.newsletter-area .newsletter-form .input-button:hover,
-.newsletter-area .newsletter-form .input-button:focus {
-    background-color: inherit;
-    color: $body-text-color;
-}
 
 .height-border {
     height: 50px;
     border: none;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .newsletter-area {
+        padding: 3rem;
+    }
+
+    .text-content {
+        margin-bottom: 2rem;
+    }
 }

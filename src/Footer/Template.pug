@@ -1,35 +1,35 @@
 footer.footer_area
     .container
         .row.justify-content-between
-            .col-3.col-xl-2.col-lg-3.col-md-3.col-sm-3
+            .col
                 .footer-widget
                     dynamic-component(
                         v-for='thingSection in cartContent' v-bind:key='thingSection.id'
                         v-bind:component_infos='thingSection'
                     )
                     // column1_sections 
-                    .footer-title {{ column1_sections.title}}
-                    ul.list-unstyled
-                        li(v-for='column1_section in column1_sections.content') 
-                            a(:href='column1_section.url') {{ column1_section.title }}
+                    dynamic-component(
+                        v-for='column1_section in column1_sections'
+                        v-bind:component_infos='column1_section'
+                    )
                     // column1_sections
-            .col-3.col-xl-2.col-lg-3.col-md-3.col-sm-3
+            .col
                 .footer-widget
                     // column2_sections
-                    .footer-title {{ column2_sections.title}}
-                    ul.list-unstyled
-                        li(v-for='column2_section in column2_sections.content') 
-                            a(:href='column2_section.url') {{ column2_section.title }}
+                    dynamic-component(
+                        v-for='column2_section in column2_sections'
+                        v-bind:component_infos='column2_section'
+                    )
                     // column2_sections
-            .col-3.col-xl-2.col-lg-3.col-md-3.col-sm-3
+            .col
                 .footer-widget
                     // column3_sections
-                    .footer-title {{ column3_sections.title}}
-                    ul.list-unstyled
-                        li(v-for='column3_section in column3_sections.content') 
-                            a(:href='column3_section.url') {{ column3_section.title }}
+                    dynamic-component(
+                        v-for='column3_section in column3_sections'
+                        v-bind:component_infos='column3_section'
+                    )
                     // column3_sections
-            .col-12.col-xl-6.col-lg-3.col-md-3.col-sm-12.text-start.text-md-end.pb-5
+            .col-md-6.col-sm-12.text-md-end.pb-5
                 .footer-widget
                     // right_sections
                     h4 {{ right_sections.street }},
@@ -37,13 +37,13 @@ footer.footer_area
                     a(:href="'mailto:' + right_sections.email") {{ right_sections.email }}
                     h6 {{ right_sections.phone_number }}
                     // right_sections
-        .row.justify-content-between
-            .col-xl-7.col-lg-6.col-md-6.col-sm-6.col-6
+        .row.justify-content-between.mt-2
+            .col
                 // bottom_left_section
                 .tiny-footer
                     p {{ bottom_left_section.copy }} 
                 // bottom_left_section
-            .col-4.col-xl-4.col-lg-4.col-md-4.col-sm-4.text-end
+            .col.text-end
                 // bottom_right_section
                 .social-info
                     strong {{ bottom_right_section.title }}

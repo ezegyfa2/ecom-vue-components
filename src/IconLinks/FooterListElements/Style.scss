@@ -1,0 +1,18 @@
+@import '../../globals.scss';
+
+.item {
+    @extend .font-style;
+}
+
+.footer-title {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+ul.list-unstyled {
+    text-decoration: none;
+
+    li {
+        margin-bottom: 10px;
+    }
+}

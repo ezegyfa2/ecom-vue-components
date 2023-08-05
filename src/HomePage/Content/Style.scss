@@ -4,8 +4,32 @@
     @extend .font-style;
 }
 
-img {
+img, .description-text {
     width: 90%;
-    min-width: 380px;
+}
+
+.text-lg-end {
+    float: right;
+}
+
+@media (max-width: 576px) {
+    img {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+    }
+
+    .description-text {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .text-lg-end {
+        float: none;
+    }
 }
 

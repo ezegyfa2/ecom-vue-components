@@ -13,10 +13,10 @@ export default {
             'ecom-vue-components/Home/Component.vue'
         )
         registerVueComponent(
-            'ecom-login',
-            require('./Login/Component.vue').default,
+            'ecom-form',
+            require('./Form/Component.vue').default,
             Vue,
-            'ecom-vue-components/Login/Component.vue'
+            'ecom-vue-components/Form/Component.vue'
         )
         registerVueComponent(
             'ecom-formitem-with-label',
@@ -35,6 +35,24 @@ export default {
             require('./NavigationBar/Component.vue').default,
             Vue,
             'ecom-vue-components/NavigationBar/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-navigation-bar2',
+            require('./NavigationBar2/Component.vue').default,
+            Vue,
+            'ecom-vue-components/NavigationBar2/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-submit-button',
+            require('./FormItems/Button2/Component.vue').default,
+            Vue,
+            'ecom-vue-components/FormItems/Button2/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-nav-link',
+            require('./IconLinks/NavLink/Component.vue').default,
+            Vue,
+            'ecom-vue-components/IconLinks/NavLink/Component.vue'
         )
         registerVueComponent(
             'ecom-icon-link-with-right-text',
@@ -155,6 +173,30 @@ export default {
             require('./Footer/Component.vue').default,
             Vue,
             'ecom-vue-components/Footer/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-footer2',
+            require('./Footer2/Component.vue').default,
+            Vue,
+            'ecom-vue-components/Footer2/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-footer-list-elements',
+            require('./IconLinks/FooterListElements/Component.vue').default,
+            Vue,
+            'ecom-vue-components/IconLinks/FooterListElements/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-footer-media-links',
+            require('./IconLinks/FooterMediaLinks/Component.vue').default,
+            Vue,
+            'ecom-vue-components/IconLinks/FooterMediaLinks/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-admin',
+            require('./Admin/Component.vue').default,
+            Vue,
+            'ecom-vue-components/Admin/Component.vue'
         )
     },
 }

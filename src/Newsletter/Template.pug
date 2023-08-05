@@ -2,12 +2,12 @@ section.newsletter-area
     .container
         .row.justify-content-between
             // Newsletter Text
-            .col-12.col-lg-6
+            .col-lg-6.col-md-6
                 dynamic-component.newsletter-text(
                     v-bind:component_infos='newsletter_text'
                 )
             // Newsletter Form
-            .col-12.col-lg-4
+            .col-lg-4.col-md-6
                 .newsletter-form
                     form
                         dynamic-component(

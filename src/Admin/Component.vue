@@ -5,24 +5,17 @@
 <script>
 export default {
 	props: {
-		formitem_sections: {
+		admin_title: {
+			type: String
+		},
+		button_section: {
+			type: Object
+		},
+		delete_title: {
+			type: String
+		},
+		images: {
 			type: Array
-		},
-		title: {
-			type: String
-		},
-		linkTitle: {
-			type: String
-		},
-		url: {
-			type: String
-		},
-		text: {
-			type: String
-		},
-		method: {
-			type: String,
-			default: 'POST'
 		}
 	}
 }

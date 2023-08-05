@@ -1,0 +1,7 @@
+.item
+    .footer-title {{ title }}
+    ul.list-unstyled
+        dynamic-component(
+            v-for='navigate_section in navigate_sections'
+            v-bind:component_infos='navigate_section'
+        )

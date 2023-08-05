@@ -1,7 +1,14 @@
 @import '../../globals.scss';
 
+.container-fluid {
+    @extend .font-style;
+    
+    background-color: $body-bg-color;
+}
+
 .container.grid {
     min-height: 60rem;
+    max-width: 1140px;
 }
 
 .container.grid a {

@@ -5,18 +5,12 @@
 <script>
 export default {
 	props: {
-		label: {
+		submit_item: {
 			type: String
 		},
-		item_id: {
-			type: String
-		},
-		item_type: {
-			type: String
-		},
-		placeholder: {
-			type: String
-		}
+        submit_label: {
+            type: String
+        }
 	}
 }
 </script>

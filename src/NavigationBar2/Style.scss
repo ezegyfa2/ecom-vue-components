@@ -1,0 +1,50 @@
+@import '../globals.scss';
+
+.navbar {
+    border-bottom: 1px solid $menu-border-color;
+    background-color: $menu-bg-color;
+    @extend .font-style;
+    height: 67px;
+}
+
+.navbar-brand {
+    z-index: 10;
+    border: none;
+    border-radius: 0;
+    padding: 0px 30px;
+    color: $newsletter-color;
+}
+
+.navbar-toggler {
+    &:hover,&:active,&:focus {
+        box-shadow: none !important;
+    }
+}
+
+.form-control {
+    padding: 0px 30px;
+}
+
+.navbar-collapse {
+    background-color: $menu-bg-color;
+}
+
+.btn {
+    z-index: 10;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    margin: 0px 12px;
+    padding: 0px 30px;
+    background-color: $newsletter-color;
+    
+    &:hover, &:active, &:focus {
+        color: $body-text-color;
+        background-color: $ol-background-color;
+    }
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}

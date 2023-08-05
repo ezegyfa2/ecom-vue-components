@@ -1,0 +1,16 @@
+nav.navbar.navbar-light.navbar-expand-lg.bg-body-tertiary
+    .container-fluid
+        a.navbar-brand(v-bind:href='url') {{ title }}
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                dynamic-component(
+                    v-for='leftItemSection in left_item_sections'
+                    v-bind:component_infos='leftItemSection'
+                )
+            form.d-flex(role='search')
+                dynamic-component(
+                    v-bind:component_infos='searchbar_section'
+                )
+                button.btn.btn-outline-success(type='submit') {{ button_title }}

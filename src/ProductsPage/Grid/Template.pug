@@ -1,62 +1,63 @@
-.container.grid
-    .row.justify-content-around
-        .row.col-6.pb-4.pr-1
-            .dropdown
-                a#dropdownMenuLink.btn.btn-light.dropdown-toggle(role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                    | SORT BY
-                    span.span-color {{ sortButton }}
-                .dropdown-menu(aria-labelledby='dropdownMenuLink')
-                    // Section arraybe
-                    dynamic-component(
-                        v-for='dropdownItemSection in dropdown_item_sections'
-                        v-bind:component_infos='dropdownItemSection'
-                    )
-                    // Section arraybe
-        .row.col-6.flex-row-reverse
-            .view-button
+.container-fluid
+    .container.grid
+        .row.justify-content-around
+            .row.col-6.pb-4.pe-1
                 .dropdown
-                    button#MenuLink.btn.btn-light.dropdown-toggle.d-block.d-lg-none.d-xl-none(role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') CATEGORIES
-                    .dropdown-menu(aria-labelledby='MenuLink')
+                    a#dropdownMenuLink.btn.btn-light.dropdown-toggle(role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                        | SORT BY
+                        span.span-color {{ sortButton }}
+                    .dropdown-menu(aria-labelledby='dropdownMenuLink')
+                        // Section arraybe
                         dynamic-component(
-                            v-for='categoriesItemSection in categories_dropdown_item_sections'
-                            v-bind:component_infos='categoriesItemSection'
+                            v-for='dropdownItemSection in dropdown_item_sections'
+                            v-bind:component_infos='dropdownItemSection'
                         )
-                        .dropdown-divider
-                        .pl-3
-                            span.circle(v-for='(color, index) in colors' :class="'circle-background' + (index + 1)" @click="sortI('color.sortI_color')")
-                        .dropdown-divider
-                        a.dropdown-item(@click='reSet') Reset
-        .row.justify-content-center
-            .col.col-xl-3.col-lg-3.d-none.d-lg-block.d-xl-block
-                .card-selector
-                    .card-body.p-5
-                        .search-title
-                            h4 Catagories    +
-                            br
-                            dynamic-component.h6(
-                                v-for='categoriesItemSection in categories_item_sections'
+                        // Section arraybe
+            .row.col-6.flex-row-reverse
+                .view-button
+                    .dropdown
+                        button#MenuLink.btn.btn-light.dropdown-toggle.d-block.d-lg-none.d-xl-none(role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') CATEGORIES
+                        .dropdown-menu(aria-labelledby='MenuLink')
+                            dynamic-component(
+                                v-for='categoriesItemSection in categories_dropdown_item_sections'
                                 v-bind:component_infos='categoriesItemSection'
                             )
-                            br
-                            br
-                            br
-                            h4.search-title Filter by    +
-                            br
-                            .co
-                                h5 Color
+                            .dropdown-divider
+                            .pl-3
                                 span.circle(v-for='(color, index) in colors' :class="'circle-background' + (index + 1)" @click="sortI('color.sortI_color')")
-                            br
-                            br
-                            h5 Price Range
-                            ecom-slider(@clicked='valueSlider')
-            .row.col-xl-9.col-lg-9.col-md-12.col-sm-12.col-xs-12.text-center
-                .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12(v-if='this.cards == 0')
-                    h4.margins Sorry, we can&apos;t find a product with this features
-                //- cardSection.id not working as a key
-                transition-group.row(name='fade' tag='div')
-                    dynamic-component(
-                        v-for='(cardSection, index) in cardSections' v-bind:key='index'
-                        v-bind:component_infos='cardSection'
-                    )
-                .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12.py-5
-                    button.btn.btn-outline-secondary.btn-lg.btn-block(type='button' @click='incCardNumber') More +
+                            .dropdown-divider
+                            a.dropdown-item(@click='reSet') Reset
+            .row.justify-content-center
+                .col.col-xl-3.col-lg-3.d-none.d-lg-block.d-xl-block
+                    .card-selector
+                        .card-body.p-5
+                            .search-title
+                                h4 Catagories    +
+                                br
+                                dynamic-component.h6(
+                                    v-for='categoriesItemSection in categories_item_sections'
+                                    v-bind:component_infos='categoriesItemSection'
+                                )
+                                br
+                                br
+                                br
+                                h4.search-title Filter by    +
+                                br
+                                .co
+                                    h5 Color
+                                    span.circle(v-for='(color, index) in colors' :class="'circle-background' + (index + 1)" @click="sortI('color.sortI_color')")
+                                br
+                                br
+                                h5 Price Range
+                                ecom-slider(@clicked='valueSlider')
+                .row.col-xl-9.col-lg-9.col-md-12.col-sm-12.col-xs-12.text-center
+                    .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12(v-if='this.cards == 0')
+                        h4.margins Sorry, we can&apos;t find a product with this features
+                    //- cardSection.id not working as a key
+                    transition-group.row(name='fade' tag='div')
+                        dynamic-component(
+                            v-for='(cardSection, index) in cardSections' v-bind:key='index'
+                            v-bind:component_infos='cardSection'
+                        )
+                    .col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12.py-5.d-grid.gap-2
+                        button.btn.btn-outline-secondary.btn-lg(type='button' @click='incCardNumber') More +

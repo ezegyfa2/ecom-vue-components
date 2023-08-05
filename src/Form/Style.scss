@@ -1,0 +1,41 @@
+@import '../globals.scss';
+
+.container {
+    width: 450px;
+    margin: 54px auto;
+    @extend .font-style;
+}
+
+.title {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.main-input-class {
+    margin-bottom: 1rem;
+}
+
+input[type=email], input[type=password], input[type=username] {
+    width: 100%;;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    @extend .dark-button;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+}

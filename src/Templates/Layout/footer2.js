@@ -1,9 +1,8 @@
 export default {
-    type: 'ecom-footer',
+    type: 'ecom-footer2',
     data: {
-        cartContent: [],
-        column1_sections: [
-            {
+        footer_item_sections: [
+            { 
                 type: 'ecom-footer-list-elements',
                 data: {
                     title: 'Navigate',
@@ -11,40 +10,38 @@ export default {
                         {
                             type: 'ecom-nav-link',
                             data: {
-                                nav_url: '/',
-                                navitem_title: 'About Us'
-                            }
-                        },
-                        {
-                            type: 'ecom-nav-link',
-                            data: {
-                                nav_url: '/',
-                                navitem_title: 'Blog'
+                                nav_url: '/products',
+                                navitem_title: 'Products'
                             }
                         },
                         {
                             type: 'ecom-nav-link',
                             data: {
                                 nav_url: '/contact',
-                                navitem_title: 'Contact Us'
+                                navitem_title: 'Contact us'
                             }
                         },
                         {
                             type: 'ecom-nav-link',
                             data: {
-                                nav_url: '/',
-                                navitem_title: 'Sitemap'
+                                nav_url: '/registration',
+                                navitem_title: 'Registration'
+                            }
+                        },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/login',
+                                navitem_title: 'Login'
                             }
                         },
                     ]
                 }
-            }
-        ],
-        column2_sections: [
+            },
             {
                 type: 'ecom-footer-list-elements',
                 data: {
-                    title: 'Collection',
+                    title: 'Collections',
                     navigate_sections: [
                         {
                             type: 'ecom-nav-link',
@@ -64,7 +61,7 @@ export default {
                             type: 'ecom-nav-link',
                             data: {
                                 nav_url: '/products',
-                                navitem_title: 'Catalog'
+                                navitem_title: 'Registration'
                             }
                         },
                         {
@@ -76,26 +73,17 @@ export default {
                         },
                     ]
                 }
-            }
-        ],
-        column3_sections: [
-            {
+            },
+            { 
                 type: 'ecom-footer-list-elements',
                 data: {
-                    title: 'Catagories',
+                    title: 'Categories',
                     navigate_sections: [
                         {
                             type: 'ecom-nav-link',
                             data: {
                                 nav_url: '/products',
                                 navitem_title: 'Tables'
-                            }
-                        },
-                        {
-                            type: 'ecom-nav-link',
-                            data: {
-                                nav_url: '/products',
-                                navitem_title: 'Lamps'
                             }
                         },
                         {
@@ -112,43 +100,52 @@ export default {
                                 navitem_title: 'Sofas'
                             }
                         },
+                        {
+                            type: 'ecom-nav-link',
+                            data: {
+                                nav_url: '/products',
+                                navitem_title: 'Lamps'
+                            }
+                        },
+                    ]
+                }
+            },
+            { 
+                type: 'ecom-footer-list-elements',
+                data: {
+                    title: 'Social Media',
+                    navigate_sections: [
+                        {
+                            type: 'ecom-footer-media-links',
+                            data: {
+                                media_url: '/',
+                                media_title: 'Twitter'
+                            }
+                        },
+                        {
+                            type: 'ecom-footer-media-links',
+                            data: {
+                                media_url: '/',
+                                media_title: 'Facebook'
+                            }
+                        },
+                        {
+                            type: 'ecom-footer-media-links',
+                            data: {
+                                media_url: '/',
+                                media_title: 'LinkedIn'
+                            }
+                        },
+                        {
+                            type: 'ecom-footer-media-links',
+                            data: {
+                                media_url: '/',
+                                media_title: 'Instagram'
+                            }
+                        },
                     ]
                 }
             }
-        ],
-        right_sections: {
-            street: '399 Crowfield Road',
-            city: 'Phoenix, Arizona 85012',
-            email: 'asff@fdsfsdc.com',
-            phone_number: '+602-926-5809'
-        },
-        bottom_left_section: {
-            copy: 'Copyright @ All Rights Reserved 2023',
-        },
-        bottom_right_section: {
-            title: 'Get social',
-            images: [
-                {
-                    src: 'images/twitter.png',
-                    alt: 'Twitter',
-                    class: 'twitter'
-                },
-                {
-                    src: 'images/pinterest.png',
-                    alt: 'Pinterest',
-                    class: 'pinterest'
-                },
-                {
-                    src: 'images/facebook.png',
-                    alt: 'Facebook',
-                    class: 'facebook'
-                },
-                {
-                    src: 'images/insta.png',
-                    alt: 'Instagram',
-                    class: 'instagram'
-                },
-            ]
-        }
+        ]
     }
 }

@@ -1,0 +1,47 @@
+@import '../globals.scss';
+
+.container {
+    width: 460px;
+    margin: 54px auto;
+    @extend .font-style;
+}
+
+.d-flex {
+    padding: 0px;
+    align-items: center;
+}
+
+.title {
+    margin: 16px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.add-button {
+    @extend .dark-button;
+}
+
+.table-responsive {
+    margin: 16px 0px;
+    overflow-y: scroll;
+    max-height: 300px;
+    border: 1px solid $form-group-label;
+}
+
+.row {
+    margin: 0px 16px;
+}
+
+.image-link {
+    margin: 6px 0px;
+}
+
+button {
+    border: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+}

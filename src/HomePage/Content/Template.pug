@@ -1,11 +1,11 @@
-.row.p-4
-    .col-6
+.row.py-lg-4.py-md-2
+    .col-md-6.col-sm-12
         img(
             :class="{ 'float-lg-end': !left_orientation }"
             :src='image_url'
             :alt='image_alt'
             )
-    .col-12.col-sm-6(:class='orientationClass')
+    .col-md-6.col-sm-12(:class='orientationClass')
         dynamic-component.description-text.light-text(
             v-bind:component_infos='text_content_section'
             v-bind:class='textOrientationClass'
