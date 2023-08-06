@@ -9,5 +9,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "../formItem.scss";
+    @import "../../formItem.scss";
 </style>

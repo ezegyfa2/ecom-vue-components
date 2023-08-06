@@ -1,5 +1,5 @@
 export default {
-    template_type_name: 'ecom_layout2',
+    template_type_name: 'ecom_layout',
     params: {
         content_sections: [
             {
@@ -25,9 +25,25 @@ export default {
                         {
                             type: 'ecom-input-field',
                             data: {
+                                label: 'Username',
+                                inputType: 'text',
+                                name: "name",
+                                value: null,
+                                required: true,
+                                validation_errors: [],
+                                maxlength: 255,
+                                minlength: 0,
+                                max: 0,
+                                min: 0,
+                                form_item_id: 'usernameInput'
+                            }
+                        },
+                        {
+                            type: 'ecom-input-field',
+                            data: {
                                 label: 'Email Adress',
                                 inputType: 'email',
-                                name: "name",
+                                name: "email",
                                 value: null,
                                 required: true,
                                 validation_errors: [],
@@ -43,7 +59,7 @@ export default {
                             data: {
                                 label: 'New Password',
                                 inputType: 'password',
-                                name: "name",
+                                name: "password",
                                 value: null,
                                 required: true,
                                 validation_errors: [],
@@ -59,7 +75,7 @@ export default {
                             data: {
                                 label: 'Confirm Password',
                                 inputType: 'password',
-                                name: "name",
+                                name: "confirm_password",
                                 value: null,
                                 required: true,
                                 validation_errors: [],
