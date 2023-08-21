@@ -1,32 +1,14 @@
-<template lang="pug">
-	include Template.pug
-</template>
-
 <script>
+import Form from '../../../helper-vue-components/src/Form/Form/Component.vue'
+
 export default {
-	props: {
-		formitem_sections: {
-			type: Array
-		},
-		title: {
-			type: String
-		},
-		link_title: {
-			type: String
-		},
-		url: {
-			type: String
-		},
-		text: {
-			type: String
-		},
-		button_section: {
-			type: Object
+	mixins: [
+		Form
+	],
+	data() {
+		return {
+			formItemTypePrefix: 'ecom'
 		}
 	}
 }
 </script>
-
-<style lang="scss" scoped>
-	@import "Style.scss";
-</style>

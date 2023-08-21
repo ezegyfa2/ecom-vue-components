@@ -19,16 +19,22 @@ export default {
             'ecom-vue-components/Form/Component.vue'
         )
         registerVueComponent(
-            'ecom-formitem-with-label',
-            require('./FormItems/FormItemWithLabel/Component.vue').default,
+            'ecom-checkbox-input',
+            require('./FormItems/Inputs/Checkbox/Component.vue').default,
             Vue,
-            'ecom-vue-components/FormItems/FormItemWithLabel/Component.vue'
+            'ecom-vue-components/FormItems/Inputs/Checkbox/Component.vue'
         )
         registerVueComponent(
-            'ecom-checkbox-with-label',
-            require('./FormItems/CheckBoxWithLabel/Component.vue').default,
+            'ecom-email-input',
+            require('./FormItems/Inputs/Email/Component.vue').default,
             Vue,
-            'ecom-vue-components/FormItems/CheckBoxWithLabel/Component.vue'
+            'ecom-vue-components/FormItems/Inputs/Email/Component.vue'
+        )
+        registerVueComponent(
+            'ecom-text-input',
+            require('./FormItems/Inputs/Text/Component.vue').default,
+            Vue,
+            'ecom-vue-components/FormItems/Inputs/Text/Component.vue'
         )
         registerVueComponent(
             'ecom-navigation-bar',
@@ -143,12 +149,6 @@ export default {
             require('./HomePage/TextContent/Component.vue').default,
             Vue,
             'dynamic-web-vue-components/HomePage/TextContent/Component.vue'
-        )
-        registerVueComponent(
-            'ecom-input-field',
-            require('./FormItems/InputField/Component.vue').default,
-            Vue,
-            'dynamic-web-vue-components/FormItems/InputField/Component.vue'
         )
         registerVueComponent(
             'ecom-form-input-email',
