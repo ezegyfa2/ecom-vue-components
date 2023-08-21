@@ -18,6 +18,8 @@
     "homepage": "https://github.com/ezegyfa2/ecom-vue-components#readme",
     "dependencies": {
         "helper-vue-components": "*",
+        "text-contents-vue-components": "*",
+        "description-vue-components": "*",
         "vue-slider-component": "^2.8.0"
     }
 }
