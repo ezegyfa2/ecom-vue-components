@@ -1,0 +1,22 @@
+.container
+    .row
+        input(
+            v-for='(item, index) in choosed_related_items'
+            v-bind:name='name + "[" + index + "]"'
+            v-bind:value='item.id'
+            type='hidden'
+        )
+        .d-flex.justify-content-between
+            h2.title {{ title }}
+            dynamic-component.add-button(
+                v-bind:component_infos='button_section'
+            )
+        .table-responsive
+            table.table.main-box.clearfix
+                tr(v-for='element in related_items')
+                    td
+                        p.element-link {{ element }}
+                    td.text-end
+                        dynamic-component(
+                            v-bind:component_infos='delete_button_section'
+                        )
