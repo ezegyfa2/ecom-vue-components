@@ -5,16 +5,22 @@
 <script>
 export default {
 	props: {
-		admin_title: {
+		title: {
+			type: String
+		},
+		name: {
 			type: String
 		},
 		button_section: {
 			type: Object
 		},
-		delete_title: {
-			type: String
+		delete_button_section: {
+			type: Object
 		},
-		images: {
+		related_items: {
+			type: Array
+		},
+		choosed_related_items: {
 			type: Array
 		}
 	}

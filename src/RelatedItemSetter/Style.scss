@@ -32,8 +32,20 @@
     margin: 0px 16px;
 }
 
-.image-link {
+.element-link {
     margin: 6px 0px;
+}
+
+.text-end {
+    a {
+        justify-content: flex-end;
+
+    } 
+} 
+
+img {
+    width: 1rem;
+    height: 1rem;
 }
 
 button {

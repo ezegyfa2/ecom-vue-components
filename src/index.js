@@ -193,10 +193,10 @@ export default {
             'ecom-vue-components/IconLinks/FooterMediaLinks/Component.vue'
         )
         registerVueComponent(
-            'ecom-admin',
-            require('./Admin/Component.vue').default,
+            'ecom-related-item-setter',
+            require('./RelatedItemSetter/Component.vue').default,
             Vue,
-            'ecom-vue-components/Admin/Component.vue'
+            'ecom-vue-components/RelatedItemSetter/Component.vue'
         )
     },
 }
