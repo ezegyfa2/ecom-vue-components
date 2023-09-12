@@ -1,5 +1,5 @@
 <script>
-    import Carousel from '../../../../helper-vue-components/src/Carousel/Component.vue';
+    import Carousel from '../../../../helper-vue-components/src/Carousel/Carousel/Component.vue';
 
     export default {
         mixins: [

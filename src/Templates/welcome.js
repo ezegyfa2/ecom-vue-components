@@ -28,6 +28,13 @@ export default {
                 }
             },
             {
+                type: 'google-map',
+                data: {
+                    apiKey: '',
+                    disabledSearch: true
+                }
+            },
+            {
                 template_type_name: 'ecom_about_us'
             }
         ]

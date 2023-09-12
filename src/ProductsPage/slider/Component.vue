@@ -16,6 +16,8 @@
 					36,
 					756
 				],
+				minValue: 30,
+				maxValue: 50,
 				options: {
 					width: "auto",
 					height: 4,

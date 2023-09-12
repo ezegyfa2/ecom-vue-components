@@ -69,7 +69,7 @@
 		},
 		methods: {
             processResponse(data) {
-                this.cards = data
+                this.cards = data.rows
                 /*this.column_names = data.column_names
                 this.total_row_count = data.total_row_count
                 data.filter_sections.forEach(filterSection => {
