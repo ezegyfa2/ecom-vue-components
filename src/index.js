@@ -73,6 +73,12 @@ export default {
             'ecom-vue-components/IconLinks/IconLinksWithImage/Component.vue'
         )
         registerVueComponent(
+            'ecom-icon-link-with-small-image',
+            require('./IconLinks/IconLinksWithSmallImage/Component.vue').default,
+            Vue,
+            'ecom-vue-components/IconLinks/IconLinksWithSmallImage/Component.vue'
+        )
+        registerVueComponent(
             'ecom-carousel',
             require('./HomePage/Carousel/Component.vue').default,
             Vue,
@@ -148,25 +154,25 @@ export default {
             'ecom-text-content',
             require('./HomePage/TextContent/Component.vue').default,
             Vue,
-            'dynamic-web-vue-components/HomePage/TextContent/Component.vue'
+            'ecom-vue-components/HomePage/TextContent/Component.vue'
         )
         registerVueComponent(
             'ecom-form-input-email',
             require('./FormItems/Inputs/Email/Component.vue').default,
             Vue,
-            'dynamic-web-vue-components/FormItems/Inputs/Email/Component.vue'
+            'ecom-vue-components/FormItems/Inputs/Email/Component.vue'
         )
         registerVueComponent(
             'ecom-form-button',
             require('./FormItems/Button/Component.vue').default,
             Vue,
-            'dynamic-web-vue-components/FormItems/Button/Component.vue'
+            'ecom-vue-components/FormItems/Button/Component.vue'
         )
         registerVueComponent(
             'ecom-contact-page',
             require('./ContactPage/ContactForm/Component.vue').default,
             Vue,
-            'dynamic-web-vue-components/ContactPage/ContactForm/Component.vue'
+            'ecom-vue-components/ContactPage/ContactForm/Component.vue'
         )
         registerVueComponent(
             'ecom-footer',

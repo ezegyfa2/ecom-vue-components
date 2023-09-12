@@ -7,21 +7,51 @@ export default {
                 data: {
                     title: 'Images',
                     name: 'images',
-                    related_items: ['image1','image2','image3','image4','image5','image6','image7','image8'],
-                    button_section: {
+                    related_items: [
+                        {title: 'image1', name: 'image1', id: 1},
+                        {title: 'image2', name: 'image2', id: 2},
+                        {title: 'image3', name: 'image3', id: 3},
+                        {title: 'image4', name: 'image4', id: 4},
+                        {title: 'image5', name: 'image5', id: 5},
+                        {title: 'image6', name: 'image6', id: 6},
+                        {title: 'image7', name: 'image7', id: 7},
+                        {title: 'image8', name: 'image8', id: 8}
+                    ],
+                    add_button_section: {
                         type: 'ecom-form-button',
                         data: {
                             content: 'Add',
                             is_submit_button: true
                         }
                     },
-                    delete_button_section: {
-                        type: 'ecom-icon-link-with-image',
+                    dropdown_button_section: {
+                        type: 'ecom-form-button',
                         data: {
-                            img_url: 'images/trash-can-regular.svg',
-                            img_alt: ''
+                            content: 'Choose an element',
+                            is_submit_button: true
                         }
-                    }
+                    },
+                    select_sections: [
+                        {
+                            type: 'ecom-link-dropdown-item',
+                            data: {
+                                url: '',
+                                content: 'image9',
+                            }
+                        },
+                        {
+                            type: 'ecom-link-dropdown-item',
+                            data: {
+                                content: 'image10', 
+                            }
+                        },
+                        {
+                            type: 'ecom-link-dropdown-item',
+                            data: {
+                                content: 'image11',
+                            }
+                        }
+                    ]
                 }
             }
         ]

@@ -6,17 +6,31 @@
             v-bind:value='item.id'
             type='hidden'
         )
-        .d-flex.justify-content-between
+        .d-flex.justify-content-between.w-100
             h2.title {{ title }}
-            dynamic-component.add-button(
-                v-bind:component_infos='button_section'
-            )
+            .dropdown
+                dynamic-component#dropdownLinks.dropdown-button.dropdown-toggle(
+                    type="button"
+                    data-toggle='dropdown'
+                    aria-haspopup="true"
+                    aria-expanded='false'
+                    v-bind:component_infos='dropdown_button_section'
+                )
+                .dropdown-menu(aria-labelledby='dropdownLinks')
+                    component(
+                        v-if='select_sections'
+                        v-for='select_element in select_sections'
+                        v-on:custom-click='addElement'
+                        v-bind:is='select_element.type'
+                        v-bind.sync='select_element.data'
+                    )
         .table-responsive
             table.table.main-box.clearfix
                 tr(v-for='element in related_items')
                     td
-                        p.element-link {{ element }}
+                        p.element-link {{ element.title }}
                     td.text-end
-                        dynamic-component(
-                            v-bind:component_infos='delete_button_section'
+                        ecom-icon-link-with-small-image(
+                            img_url='images/trash-can-regular.svg'
+                            v-on:click='deleteElement(element.id)'
                         )

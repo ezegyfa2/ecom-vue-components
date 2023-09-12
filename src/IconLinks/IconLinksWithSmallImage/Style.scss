@@ -1,0 +1,15 @@
+@import '../../globals.scss';
+
+a {
+    justify-content: flex-end;
+
+    img {
+        cursor: pointer;
+        width: 1rem;
+        height: 1rem;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
