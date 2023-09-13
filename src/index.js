@@ -1,8 +1,8 @@
 export default {
     install(Vue) {
-        require('helper-vue-components').default.install(Vue)
-        require('text-contents-vue-components').default.install(Vue)
-		require('description-vue-components').default.install(Vue)
+        require('helper-vue-components/index').default.install(Vue)
+        require('text-contents-vue-components/index').default.install(Vue)
+        require('description-vue-components/index').default.install(Vue)
 
         require('./Templates/templateRegister.js').default.install()
         
