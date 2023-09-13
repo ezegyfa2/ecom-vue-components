@@ -1,32 +1,26 @@
 .container
     .row
         input(
-            v-for='(item, index) in choosed_related_items'
+            v-for='(item, index) in choosed_items'
             v-bind:name='name + "[" + index + "]"'
             v-bind:value='item.id'
             type='hidden'
         )
         .d-flex.justify-content-between.w-100
             h2.title {{ title }}
-            .dropdown
-                dynamic-component#dropdownLinks.dropdown-button.dropdown-toggle(
-                    type="button"
-                    data-toggle='dropdown'
-                    aria-haspopup="true"
-                    aria-expanded='false'
-                    v-bind:component_infos='dropdown_button_section'
-                )
-                .dropdown-menu(aria-labelledby='dropdownLinks')
-                    component(
-                        v-if='select_sections'
-                        v-for='select_element in select_sections'
-                        v-on:custom-click='addElement'
-                        v-bind:is='select_element.type'
-                        v-bind.sync='select_element.data'
-                    )
+            bootstrap-select(
+                v-bind:name='select_section.name' 
+                v-bind:value.sync='selectedOption'
+                v-bind:searchable='select_section.live_search'
+                v-bind:options='relatedOptions'
+                v-bind:data_url='select_section.data_url'
+                v-bind:data_infos='select_section.data_infos'
+                v-on:update:options='changeOptions'
+                v-on:update:value='addElement'
+            )
         .table-responsive
             table.table.main-box.clearfix
-                tr(v-for='element in related_items')
+                tr(v-for='element in choosed_items')
                     td
                         p.element-link {{ element.title }}
                     td.text-end

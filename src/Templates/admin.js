@@ -7,7 +7,7 @@ export default {
                 data: {
                     title: 'Images',
                     name: 'images',
-                    related_items: [
+                    choosed_items: [
                         {title: 'image1', name: 'image1', id: 1},
                         {title: 'image2', name: 'image2', id: 2},
                         {title: 'image3', name: 'image3', id: 3},
@@ -17,41 +17,14 @@ export default {
                         {title: 'image7', name: 'image7', id: 7},
                         {title: 'image8', name: 'image8', id: 8}
                     ],
-                    add_button_section: {
-                        type: 'ecom-form-button',
-                        data: {
-                            content: 'Add',
-                            is_submit_button: true
+                    select_section: {
+                        name: 'select',
+                        live_search: true,
+                        data_url: '/admin-options',
+                        data_infos: {
+                            'column-name': 'product_category_id',
                         }
-                    },
-                    dropdown_button_section: {
-                        type: 'ecom-form-button',
-                        data: {
-                            content: 'Choose an element',
-                            is_submit_button: true
-                        }
-                    },
-                    select_sections: [
-                        {
-                            type: 'ecom-link-dropdown-item',
-                            data: {
-                                url: '',
-                                content: 'image9',
-                            }
-                        },
-                        {
-                            type: 'ecom-link-dropdown-item',
-                            data: {
-                                content: 'image10', 
-                            }
-                        },
-                        {
-                            type: 'ecom-link-dropdown-item',
-                            data: {
-                                content: 'image11',
-                            }
-                        }
-                    ]
+                    }
                 }
             }
         ]
