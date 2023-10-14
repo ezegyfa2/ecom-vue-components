@@ -9,7 +9,13 @@
 				type: Number
 			},
 			image: {
-				type: Object
+				type: Object,
+				default() {
+					return {
+						url: './images/ecomDefaultImage.jpg',
+						alt: 'Product image'
+					}
+				}
 			},
 			title: {
 				type: String

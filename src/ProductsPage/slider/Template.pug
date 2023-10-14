@@ -1,3 +1,13 @@
 div(@click="getValue('sli')")
-    vue-slider(ref='sli' v-model='value' v-bind='options')
+    range-slider(
+        ref='sli' 
+        :min="50"
+        :max="1040"
+        :step="10"
+        :ruler="false"
+        :label="false"
+        :minValue="minValue"
+        :maxValue="maxValue"
+        style="border: none; color: black"
+    )
     span ${{ value.join(' ~ $') }}
